@@ -1,9 +1,3 @@
-//
-//  NavigationApp.swift
-//  Navigation
-//
-//  Created by Marcelo Hora on 10/01/23.
-//
 
 import SwiftUI
 

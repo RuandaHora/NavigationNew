@@ -1,9 +1,3 @@
-//
-//  MatchedView.swift
-//  Navigation
-//
-//  Created by Marcelo Hora on 10/01/23.
-//
 
 import SwiftUI
 
@@ -46,7 +40,7 @@ struct MatchedView: View {
             Spacer()
         }.onTapGesture {
             show.toggle()
-    }
+            }
         }
 }
 
