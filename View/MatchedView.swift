@@ -17,16 +17,29 @@ struct MatchedView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
             if !show {
-                Text("Teste")
-                    .frame(width: 300, height: 200)
-                    .background(Color.blue)
+                VStack (alignment: .leading, spacing: 12){
+                    Spacer()
+                    Text("AD BRAS")
+                        .frame(width: 300, height: 80)
+                        .background(Color.white)
+                        .foregroundColor(.black)
+                        .font(.title.bold())
+                        .cornerRadius(40)
+                        
+                        
+                }.frame(width: 300, height: 200)
+                    .background(Image("BackGround"))
                     .cornerRadius(40)
             }
             else {
-                Text("Teste deu certo")
-                    .frame(width: 340, height: 450)
-                    .background(Color.purple)
+                VStack {
+                    Text("AD BRAS")
+                        .foregroundColor(.white)
+                        .font(.title.bold())
+                }.frame(width: 340, height: 450)
+                    .background(Image("BackGround"))
                     .cornerRadius(40)
+                    
             }
             Spacer()
         }.onTapGesture {
