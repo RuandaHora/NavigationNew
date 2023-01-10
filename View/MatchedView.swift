@@ -13,8 +13,8 @@ struct MatchedView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 0)
-            .background(Color.black)
-            .frame(width: .infinity, height: .infinity)
+            .fill(Color("DarkMode"))
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
             if !show {
                 Text("Teste")
