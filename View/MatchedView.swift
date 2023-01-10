@@ -24,7 +24,7 @@ struct MatchedView: View {
                 
             }
             else {
-                Text("Teste")
+                Text("Teste deu certo")
                     .frame(width: 250, height: 450)
                     .background(Color.purple)
                     .cornerRadius(40)
