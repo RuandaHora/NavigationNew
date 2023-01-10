@@ -27,19 +27,21 @@ struct MatchedView: View {
                         .cornerRadius(40)
                         
                         
-                }.frame(width: 300, height: 200)
-                    .background(Image("BackGround"))
-                    .cornerRadius(40)
-            }
-            else {
-                VStack {
-                    Text("AD BRAS")
-                        .foregroundColor(.white)
-                        .font(.title.bold())
-                }.frame(width: 340, height: 450)
+                }.frame(width: 350, height: 250)
                     .background(Image("BackGround"))
                     .cornerRadius(40)
                     
+            }
+            else {
+                ScrollView{
+                    VStack {
+                        Text("AD BRAS")
+                            .foregroundColor(.white)
+                            .font(.title.bold())
+                    }.frame(width: 340, height: 450)
+                        .background(Image("BackGround"))
+                        .cornerRadius(40)
+                }
             }
             Spacer()
         }.onTapGesture {
