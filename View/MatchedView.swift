@@ -18,17 +18,17 @@ struct MatchedView: View {
             .ignoresSafeArea()
             if !show {
                 Text("Teste")
-                    .frame(width: 200, height: 100)
+                    .frame(width: 300, height: 200)
                     .background(Color.blue)
                     .cornerRadius(40)
-                
             }
             else {
                 Text("Teste deu certo")
-                    .frame(width: 250, height: 450)
+                    .frame(width: 340, height: 450)
                     .background(Color.purple)
                     .cornerRadius(40)
             }
+            Spacer()
         }.onTapGesture {
             show.toggle()
     }
