@@ -2,6 +2,8 @@
 import SwiftUI
 
 struct NavigationBar: View {
+    @State var show = false
+    @State var search = ""
     var body: some View {
         ScrollView{
             VStack{
@@ -14,14 +16,25 @@ struct NavigationBar: View {
                     VStack (alignment: .trailing) {
                         HStack{
                             Spacer()
-                            Button(action: {}) {
-                                Image("Lupa")
-                                    .resizable()
-                                    .frame(width: 26, height: 26)
-                                    .cornerRadius(10)
-                                    .padding(8)
-                                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                                
+                            HStack{
+                                if !show {
+                                        Image("Lupa")
+                                            .resizable()
+                                            .frame(width: 26, height: 26)
+                                            .cornerRadius(10)
+                                            .padding(8)
+                                            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                                    
+                                } else{
+                                    VStack{
+                                        TextField("search", text: self.$search)
+                                            .frame(width: 100, height: 35)
+                                            .background(Color.gray)
+                                            .cornerRadius(20) 
+                                    }
+                                }
+                            }.onTapGesture {
+                                show.toggle()
                             }
                             Button(action: {}) {
                                 Image("Image 2")

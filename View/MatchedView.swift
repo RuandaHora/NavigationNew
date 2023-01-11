@@ -2,8 +2,10 @@
 import SwiftUI
 
 struct MatchedView: View {
+    
     @Namespace var namespace
     @State var show = false
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 0)
@@ -14,7 +16,7 @@ struct MatchedView: View {
                 VStack (alignment: .leading, spacing: 12){
                     Spacer()
                     Text("AD BRAS")
-                        .frame(width: 300, height: 80)
+                        .frame(width: 350, height: 80)
                         .background(Color.white)
                         .foregroundColor(.black)
                         .font(.title.bold())
