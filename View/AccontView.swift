@@ -41,10 +41,7 @@ struct AccontView: View {
                 .background(Color("Color 1"))
                 .cornerRadius(10)
                 .font(.headline)
-                Rectangle()
-                    .fill(.ultraThinMaterial)
-                    .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                    .matchedGeometryEffect(id: "blur", in: namespace)
+                Divider()
                 VStack{
                     if !show {
                         VStack (alignment: .leading){
@@ -74,6 +71,7 @@ struct AccontView: View {
                         .font(.headline)
                     }
                 }
+          Divider()
             }.onTapGesture {
                 show.toggle()
             }
