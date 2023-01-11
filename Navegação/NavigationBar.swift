@@ -5,7 +5,7 @@ struct NavigationBar: View {
     @State var show = false
     @State var search = ""
     var body: some View {
-        ScrollView{
+        
             VStack{
                 Divider()
                 HStack{
@@ -28,7 +28,7 @@ struct NavigationBar: View {
                                 } else{
                                     VStack{
                                         TextField("search", text: self.$search)
-                                            .frame(width: 100, height: 35)
+                                            .frame(width: 120, height: 35)
                                             .background(Color.gray)
                                             .cornerRadius(20) 
                                     }
@@ -50,7 +50,6 @@ struct NavigationBar: View {
                     }
                 }
                 Spacer()
-            }
         }
     }
 }
