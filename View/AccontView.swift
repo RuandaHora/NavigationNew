@@ -25,9 +25,14 @@ struct AccontView: View {
             VStack (alignment: .leading){
                 Text("Nome: Ruan da Hora.")
                 Text("Idade: 18 anos.")
+                Text("País: Brasil.")
                 
                 
-            }.font(.headline)
+            }
+            .frame(width: 250, height: 90)
+            .background(Color("Color 1"))
+                .cornerRadius(10)
+            .font(.headline)
                     Rectangle()
                         .fill(.ultraThinMaterial)
                         .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
