@@ -29,6 +29,7 @@ struct AccontView: View {
                     .frame(width: 200, height: 200)
                     .cornerRadius(100)
                 }
+                Divider()
                 VStack (alignment: .leading){
                     Text("Nome: Ruan da Hora.")
                     Text("Idade: 18 anos.")
