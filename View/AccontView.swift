@@ -10,6 +10,7 @@ import SwiftUI
 struct AccontView: View {
     @State var nome = "Ruan da Hora"
     @State var idade = "18 years old"
+    @Namespace var namespace
     var body: some View {
         ScrollView{
             VStack{
@@ -20,16 +21,18 @@ struct AccontView: View {
                 .background(Color.purple)
                 .frame(width: 350, height: 485)
                 .cornerRadius(50)
-        }
-        VStack (alignment: .leading){
-           
             
-        }.frame(width: 300, height: 200)
-            .background(Color.purple)
-            .cornerRadius(50)
-            .foregroundColor(.white)
-            .font(.headline)
-            .blur(radius: 5)
+            VStack (alignment: .leading){
+                Text("Nome: Ruan da Hora.")
+                Text("Idade: 18 anos.")
+                
+                
+            }.font(.headline)
+                    Rectangle()
+                        .fill(.ultraThinMaterial)
+                        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                        .matchedGeometryEffect(id: "blur", in: namespace)
+        }
     }
 }
 
