@@ -1,9 +1,3 @@
-//
-//  MasterView.swift
-//  Navigation
-//
-//  Created by Marcelo Hora on 11/01/23.
-//
 
 import SwiftUI
 
