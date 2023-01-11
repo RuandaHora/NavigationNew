@@ -20,24 +20,13 @@ struct AccontView: View {
                 .ignoresSafeArea()
             
             ScrollView{
-                if !show {
+                NavigationLink(destination: Perfil()) {
                     VStack{
                         Image("Image 2")
                             .resizable()
                     }
-                    .padding()
                     .background(Color.purple)
                     .frame(width: 200, height: 200)
-                    .cornerRadius(100)
-                } else {
-                    VStack{
-                        
-                        Image("Image 2")
-                            .resizable()
-                    }
-                    .padding()
-                    .background(Color.purple)
-                    .frame(width: 400, height: 400)
                     .cornerRadius(100)
                 }
                 VStack (alignment: .leading){

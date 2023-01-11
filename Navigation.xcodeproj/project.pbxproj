@@ -15,6 +15,7 @@
 		88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CDF296E5D3000EA98A8 /* GeneralView.swift */; };
 		88451CE4296E5FC000EA98A8 /* AccontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CE3296E5FC000EA98A8 /* AccontView.swift */; };
 		88451CE6296E71C300EA98A8 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CE5296E71C300EA98A8 /* MasterView.swift */; };
+		88451CE9296E7FB200EA98A8 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CE8296E7FB200EA98A8 /* Perfil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		88451CDF296E5D3000EA98A8 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		88451CE3296E5FC000EA98A8 /* AccontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccontView.swift; sourceTree = "<group>"; };
 		88451CE5296E71C300EA98A8 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		88451CE8296E7FB200EA98A8 /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		88451CBF296E1DDF00EA98A8 = {
 			isa = PBXGroup;
 			children = (
+				88451CE7296E7F6500EA98A8 /* Components */,
 				88451CDC296E2F1500EA98A8 /* Navegação */,
 				88451CD9296E1DF100EA98A8 /* View */,
 				88451CCA296E1DDF00EA98A8 /* Navigation */,
@@ -94,6 +97,14 @@
 			);
 			name = "Navegação";
 			path = "Navegação";
+			sourceTree = "<group>";
+		};
+		88451CE7296E7F6500EA98A8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				88451CE8296E7FB200EA98A8 /* Perfil.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88451CE6296E71C300EA98A8 /* MasterView.swift in Sources */,
+				88451CE9296E7FB200EA98A8 /* Perfil.swift in Sources */,
 				88451CCC296E1DDF00EA98A8 /* NavigationApp.swift in Sources */,
 				88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */,
 				88451CDB296E1E0200EA98A8 /* MatchedView.swift in Sources */,
