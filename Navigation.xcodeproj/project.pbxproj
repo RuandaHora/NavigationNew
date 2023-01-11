@@ -12,6 +12,8 @@
 		88451CD3296E1DE300EA98A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88451CD2296E1DE300EA98A8 /* Preview Assets.xcassets */; };
 		88451CDB296E1E0200EA98A8 /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CDA296E1E0200EA98A8 /* MatchedView.swift */; };
 		88451CDE296E2F6D00EA98A8 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CDD296E2F6D00EA98A8 /* NavigationBar.swift */; };
+		88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CDF296E5D3000EA98A8 /* GeneralView.swift */; };
+		88451CE4296E5FC000EA98A8 /* AccontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CE3296E5FC000EA98A8 /* AccontView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		88451CD2296E1DE300EA98A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88451CDA296E1E0200EA98A8 /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 		88451CDD296E2F6D00EA98A8 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		88451CDF296E5D3000EA98A8 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
+		88451CE3296E5FC000EA98A8 /* AccontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccontView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				88451CDA296E1E0200EA98A8 /* MatchedView.swift */,
+				88451CDF296E5D3000EA98A8 /* GeneralView.swift */,
+				88451CE3296E5FC000EA98A8 /* AccontView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,8 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				88451CCC296E1DDF00EA98A8 /* NavigationApp.swift in Sources */,
+				88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */,
 				88451CDB296E1E0200EA98A8 /* MatchedView.swift in Sources */,
 				88451CDE296E2F6D00EA98A8 /* NavigationBar.swift in Sources */,
+				88451CE4296E5FC000EA98A8 /* AccontView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
