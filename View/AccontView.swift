@@ -11,32 +11,72 @@ struct AccontView: View {
     @State var nome = "Ruan da Hora"
     @State var idade = "18 years old"
     @Namespace var namespace
+    @State var show = false
     var body: some View {
-        ScrollView{
-            VStack{
-                Image("Image 2")
-                
-                
-            }.padding()
-                .background(Color.purple)
-                .frame(width: 350, height: 485)
-                .cornerRadius(50)
+        ZStack{
+            RoundedRectangle(cornerRadius: 0)
+                .fill(Color("DarkMode"))
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .ignoresSafeArea()
             
-            VStack (alignment: .leading){
-                Text("Nome: Ruan da Hora.")
-                Text("Idade: 18 anos.")
-                Text("País: Brasil.")
+            ScrollView{
+                VStack{
+                    Image("Image 2")
+                    
+                    
+                }.padding()
+                    .background(Color.purple)
+                    .frame(width: 350, height: 485)
+                    .cornerRadius(50)
                 
-                
-            }
-            .frame(width: 250, height: 90)
-            .background(Color("Color 1"))
+                VStack (alignment: .leading){
+                    Text("Nome: Ruan da Hora.")
+                    Text("Idade: 18 anos.")
+                    Text("País: Brasil.")
+                    
+                    
+                }
+                .foregroundColor(Color("LetraA"))
+                .frame(width: 250, height: 90)
+                .background(Color("Color 1"))
                 .cornerRadius(10)
-            .font(.headline)
-                    Rectangle()
-                        .fill(.ultraThinMaterial)
-                        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                        .matchedGeometryEffect(id: "blur", in: namespace)
+                .font(.headline)
+                Rectangle()
+                    .fill(.ultraThinMaterial)
+                    .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                    .matchedGeometryEffect(id: "blur", in: namespace)
+                VStack{
+                    if !show {
+                        VStack (alignment: .leading){
+                            Text("REDES SOCIAIS ")
+                            
+                        }
+                        .foregroundColor(Color("LetraA"))
+                        .frame(width: 250, height: 90)
+                        .background(Color("Color 1"))
+                        .cornerRadius(10)
+                        .font(.headline)
+                    } else {
+                        VStack (alignment: .leading){
+                            Text("GITHUB: https://github.com/RuandaHora")
+                            Divider()
+                            Text("INSTAGRAM: https://www.instagram.com/ruanpablodahora/ ")
+                            Divider()
+                            Text("LINKEDIN: https://www.linkedin.com/in/ruan-da-hora-959b0220a/ ")
+                            Divider()
+                            Text("FACEBOOK: https://web.facebook.com/ruan.dahora.54/ ")
+                            Divider()
+                        }
+                        .foregroundColor(Color("LetraA"))
+                        .frame(width: 350, height: 250)
+                        .background(Color("Color 1"))
+                        .cornerRadius(10)
+                        .font(.headline)
+                    }
+                }
+            }.onTapGesture {
+                show.toggle()
+            }
         }
     }
 }
