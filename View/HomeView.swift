@@ -17,7 +17,7 @@ struct HomeView: View {
             VStack{
                 Divider()
                 HStack{
-                    NavigationLink (destination: MensageView()) {
+                    NavigationLink (destination: HomeView()) {
                         Text("Home ")
                             .font(.title.bold())
                             .foregroundColor(Color("DarkMode"))
