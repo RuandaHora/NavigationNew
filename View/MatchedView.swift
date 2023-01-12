@@ -17,10 +17,10 @@ struct MatchedView: View {
                     Spacer()
                     Text("AD BRAS")
                         .frame(width: 350, height: 80)
-                        .background(Color.white)
+                        .background(.ultraThinMaterial)
                         .foregroundColor(.black)
                         .font(.title.bold())
-                        .cornerRadius(40)
+                        .cornerRadius(20)
                         
                         
                 }.frame(width: 350, height: 250)
@@ -31,10 +31,16 @@ struct MatchedView: View {
             else {
                 ScrollView{
                     VStack {
+                        
                         Text("AD BRAS")
-                            .foregroundColor(.white)
-                            .font(.title.bold())
-                    }.frame(width: 340, height: 450)
+                        
+                    }
+                    .frame(width: 350, height: 80)
+                        .background(.ultraThinMaterial)
+                        .foregroundColor(.black)
+                        .font(.title.bold())
+                        .cornerRadius(20)
+                    .frame(width: 340, height: 450)
                         .background(Image("BackGround"))
                         .cornerRadius(40)
                 }
