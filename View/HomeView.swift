@@ -14,10 +14,12 @@ struct HomeView: View {
             VStack{
                 Divider()
                 HStack{
-                    Text("Home ")
-                        .font(.title.bold())
-                        .foregroundColor(.primary)
-                        .padding(.horizontal, 20)
+                    NavigationLink (destination: MensageView()) {
+                        Text("Home ")
+                            .font(.title.bold())
+                            .foregroundColor(.primary)
+                            .padding(.horizontal, 20)
+                    }
                     VStack (alignment: .trailing) {
                         HStack{
                             Spacer()
