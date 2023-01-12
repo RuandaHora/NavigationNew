@@ -14,8 +14,9 @@
 		88451CDE296E2F6D00EA98A8 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CDD296E2F6D00EA98A8 /* NavigationBar.swift */; };
 		88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CDF296E5D3000EA98A8 /* GeneralView.swift */; };
 		88451CE4296E5FC000EA98A8 /* AccontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CE3296E5FC000EA98A8 /* AccontView.swift */; };
-		88451CE6296E71C300EA98A8 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CE5296E71C300EA98A8 /* MasterView.swift */; };
 		88451CE9296E7FB200EA98A8 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CE8296E7FB200EA98A8 /* Perfil.swift */; };
+		88451CEB296F8BB900EA98A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CEA296F8BB900EA98A8 /* HomeView.swift */; };
+		88451CED296F8EC800EA98A8 /* Mensageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CEC296F8EC800EA98A8 /* Mensageview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +28,9 @@
 		88451CDD296E2F6D00EA98A8 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		88451CDF296E5D3000EA98A8 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		88451CE3296E5FC000EA98A8 /* AccontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccontView.swift; sourceTree = "<group>"; };
-		88451CE5296E71C300EA98A8 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		88451CE8296E7FB200EA98A8 /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
+		88451CEA296F8BB900EA98A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		88451CEC296F8EC800EA98A8 /* Mensageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensageview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,8 @@
 				88451CDA296E1E0200EA98A8 /* MatchedView.swift */,
 				88451CDF296E5D3000EA98A8 /* GeneralView.swift */,
 				88451CE3296E5FC000EA98A8 /* AccontView.swift */,
-				88451CE5296E71C300EA98A8 /* MasterView.swift */,
+				88451CEA296F8BB900EA98A8 /* HomeView.swift */,
+				88451CEC296F8EC800EA98A8 /* Mensageview.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,13 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88451CE6296E71C300EA98A8 /* MasterView.swift in Sources */,
 				88451CE9296E7FB200EA98A8 /* Perfil.swift in Sources */,
+				88451CEB296F8BB900EA98A8 /* HomeView.swift in Sources */,
 				88451CCC296E1DDF00EA98A8 /* NavigationApp.swift in Sources */,
 				88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */,
 				88451CDB296E1E0200EA98A8 /* MatchedView.swift in Sources */,
 				88451CDE296E2F6D00EA98A8 /* NavigationBar.swift in Sources */,
 				88451CE4296E5FC000EA98A8 /* AccontView.swift in Sources */,
+				88451CED296F8EC800EA98A8 /* Mensageview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
