@@ -32,7 +32,8 @@ struct AccontView: View {
                 }
                 .foregroundColor(Color("LetraA"))
                 .frame(width: 250, height: 90)
-                .background(Color("Color 1"))
+                
+                .background(.ultraThinMaterial)
                 .cornerRadius(10)
                 .font(.headline)
                 Divider()
@@ -44,7 +45,7 @@ struct AccontView: View {
                         }
                         .foregroundColor(Color("LetraA"))
                         .frame(width: 250, height: 90)
-                        .background(Color("Color 1"))
+                        .background(.ultraThinMaterial)
                         .cornerRadius(10)
                         .font(.headline)
                     } else {
@@ -60,7 +61,7 @@ struct AccontView: View {
                         }
                         .foregroundColor(Color("LetraA"))
                         .frame(width: 350, height: 250)
-                        .background(Color("Color 1"))
+                        .background(.ultraThinMaterial)
                         .cornerRadius(10)
                         .font(.headline)
                     }
