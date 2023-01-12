@@ -9,9 +9,8 @@ struct AccontView: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 0)
-                .fill(Color("DarkMode"))
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .ignoresSafeArea()
+                .frame(width: 0, height: 0)
+                .background(Image("GeneralBackground"))
             
             ScrollView{
                 NavigationLink(destination: Perfil()) {

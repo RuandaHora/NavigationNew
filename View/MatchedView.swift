@@ -15,40 +15,71 @@ struct MatchedView: View {
             if !show {
                 VStack (alignment: .leading, spacing: 12){
                     Spacer()
-                    Text("AD BRAS")
-                        .frame(width: 350, height: 80)
-                        .background(.ultraThinMaterial)
-                        .foregroundColor(.black)
-                        .font(.title.bold())
-                        .cornerRadius(20)
+                    VStack (alignment: .leading, spacing: 12){
+                        Text("AD BRAS")
+                            .font(.largeTitle.bold())
+                            .matchedGeometryEffect(id: "title", in: namespace)
                         
-                        
+                    }.padding(20)
+                        .background(
+                            Rectangle()
+                                .fill(.ultraThinMaterial)
+                                .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                                .blur(radius: 30)
+                                .matchedGeometryEffect(id: "blur", in: namespace))
+                    
+                    
                 }.frame(width: 350, height: 250)
                     .background(Image("BackGround"))
                     .cornerRadius(40)
-                    
+                    .padding(20)
+                    .background(
+                        Rectangle()
+                            .fill(.ultraThinMaterial)
+                            .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                            .blur(radius: 30)
+                            .matchedGeometryEffect(id: "blur", in: namespace))
             }
             else {
                 ScrollView{
-                    VStack {
-                        
-                        Text("AD BRAS")
-                        
-                    }
-                    .frame(width: 350, height: 80)
-                        .background(.ultraThinMaterial)
-                        .foregroundColor(.black)
-                        .font(.title.bold())
-                        .cornerRadius(20)
-                    .frame(width: 340, height: 450)
-                        .background(Image("BackGround"))
-                        .cornerRadius(40)
+                    VStack{
+                        Spacer()
+                          
+                    }.frame(maxWidth: .infinity)
+                    .frame(height: 500)
+                    .foregroundStyle(.white)
+                        .background(
+                            Image("BackGround")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .matchedGeometryEffect(id: "backgound", in: namespace))
+                        .mask(
+                            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                            .matchedGeometryEffect(id: "mask", in: namespace))
+                        .overlay(
+                            VStack (alignment: .leading, spacing: 12){
+                                Text("AD BRAS")
+                                    .font(.largeTitle.bold())
+                                    .matchedGeometryEffect(id: "title", in: namespace)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                
+                            } .padding(20)
+                                .foregroundColor(.white)
+                                .background(
+                                    Rectangle()
+                                        .fill(.ultraThinMaterial)
+                                        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                                        .matchedGeometryEffect(id: "blur", in: namespace)
+                        )
+                        )
                 }
             }
             Spacer()
         }.onTapGesture {
-            show.toggle()
+            withAnimation (.spring(response: 0.6, dampingFraction: 0.5)){
+                show.toggle()
             }
+        }
         }
 }
 

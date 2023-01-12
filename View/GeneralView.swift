@@ -4,7 +4,7 @@ import SwiftUI
 struct GeneralView: View {
     var body: some View {
         NavigationView {
-            NavigationBar()
+            HomeView()
         }
     }
 }
