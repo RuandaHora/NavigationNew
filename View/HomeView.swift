@@ -17,8 +17,8 @@ struct HomeView: View {
                     NavigationLink (destination: MensageView()) {
                         Text("Home ")
                             .font(.title.bold())
-                            .foregroundColor(.primary)
-                            .padding(.horizontal, 20)
+                            .foregroundColor(Color("DarkMode"))
+                            .padding(.horizontal, 30)
                     }
                     VStack (alignment: .trailing) {
                         HStack{
