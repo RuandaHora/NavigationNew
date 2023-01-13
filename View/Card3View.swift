@@ -1,5 +1,5 @@
 //
-//  Card2View.swift
+//  Card3View.swift
 //  Navigation
 //
 //  Created by Marcelo Hora on 13/01/23.
@@ -7,29 +7,28 @@
 
 import SwiftUI
 
-struct Card2View: View {
+struct Card3View: View {
     var body: some View {
-        ScrollView(.horizontal) {
-            HStack {
-                ForEach(0 ..< 5) { item in
-                    Cards2View()
+        ScrollView (.horizontal) {
+                HStack {
+                    ForEach(0 ..< 5) { item in
+                        Cards3View()
+                    }
                 }
-            }
         }
     }
-}
+    }
 
-struct Card2View_Previews: PreviewProvider {
+struct Card3View_Previews: PreviewProvider {
     static var previews: some View {
-        Card2View()
+        Card3View()
     }
 }
 
-struct Cards2View: View {
+struct Cards3View: View {
     var body: some View {
         NavigationLink(destination: Details2View()) {
             VStack (alignment: .leading, spacing: 16.0){
-                
                 HStack {
                     Spacer()
                     Image("BackGround2")
@@ -47,7 +46,7 @@ struct Cards2View: View {
             .padding(.all)
             .frame(width: 180, height: 230)
             .foregroundColor(.white)
-            .background(.ultraThinMaterial)
+            .background(Image("Card3"))
             .cornerRadius(30)
         }.padding(11.5)
     }

@@ -21,6 +21,8 @@
 		886D77702971B56C005EB726 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D776F2971B56B005EB726 /* DetailsView.swift */; };
 		886D77722971BD08005EB726 /* Card2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D77712971BD08005EB726 /* Card2View.swift */; };
 		886D77742971C038005EB726 /* Details2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D77732971C038005EB726 /* Details2View.swift */; };
+		886D777629720EC5005EB726 /* Card3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D777529720EC5005EB726 /* Card3View.swift */; };
+		886D777829720EE9005EB726 /* Details3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D777729720EE9005EB726 /* Details3View.swift */; };
 		88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE0CB62970D8CE00DF460D /* CardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		886D776F2971B56B005EB726 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		886D77712971BD08005EB726 /* Card2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card2View.swift; sourceTree = "<group>"; };
 		886D77732971C038005EB726 /* Details2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details2View.swift; sourceTree = "<group>"; };
+		886D777529720EC5005EB726 /* Card3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card3View.swift; sourceTree = "<group>"; };
+		886D777729720EE9005EB726 /* Details3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details3View.swift; sourceTree = "<group>"; };
 		88CE0CB62970D8CE00DF460D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,8 @@
 				886D776F2971B56B005EB726 /* DetailsView.swift */,
 				886D77712971BD08005EB726 /* Card2View.swift */,
 				886D77732971C038005EB726 /* Details2View.swift */,
+				886D777529720EC5005EB726 /* Card3View.swift */,
+				886D777729720EE9005EB726 /* Details3View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,8 +207,10 @@
 				886D77742971C038005EB726 /* Details2View.swift in Sources */,
 				88451CCC296E1DDF00EA98A8 /* NavigationApp.swift in Sources */,
 				88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */,
+				886D777629720EC5005EB726 /* Card3View.swift in Sources */,
 				886D77722971BD08005EB726 /* Card2View.swift in Sources */,
 				88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */,
+				886D777829720EE9005EB726 /* Details3View.swift in Sources */,
 				886D77702971B56C005EB726 /* DetailsView.swift in Sources */,
 				88451CDE296E2F6D00EA98A8 /* NavigationBar.swift in Sources */,
 				88451CF3296FA07800EA98A8 /* CourseView.swift in Sources */,
