@@ -49,6 +49,6 @@ struct Cards2View: View {
             .foregroundColor(.white)
             .background(.ultraThinMaterial)
             .cornerRadius(30)
-        }
+        }.padding()
     }
 }

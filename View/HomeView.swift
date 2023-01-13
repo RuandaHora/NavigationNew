@@ -21,7 +21,7 @@ struct HomeView: View {
                             Mensage()
                     }
                     ScrollView(.horizontal){
-                        HStack (spacing: 16) {
+                        HStack {
                             ForEach(0 ..< 2) { item in
                                 CardsView()
                                 Cards2View()
@@ -29,7 +29,7 @@ struct HomeView: View {
                         }
                     }
                     ScrollView (.horizontal) {
-                        HStack (spacing: 16) {
+                        HStack {
                             ForEach(0 ..< 2) { item in
                                 Cards2View()
                                 CardsView()

@@ -42,7 +42,7 @@ struct Bar: View {
                                     VStack{
                                         TextField("search", text: self.$search)
                                             .frame(width: 120, height: 35)
-                                            .background(Color.gray)
+                                            .background(.ultraThinMaterial)
                                             .cornerRadius(20)
                                     }
                                 }
