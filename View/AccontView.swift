@@ -39,8 +39,19 @@ struct AccontView: View {
                 Divider()
                 VStack{
                     if !show {
-                        VStack (alignment: .leading){
-                            Text("REDES SOCIAIS ")
+                        HStack{
+                            Image("Insta")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                            Image("Face")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                            Image("Linke")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                            Image("GitHub")
+                                .resizable()
+                                .frame(width: 25, height: 25)
                             
                         }
                         .foregroundColor(Color("LetraA"))
