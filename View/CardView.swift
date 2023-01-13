@@ -21,26 +21,28 @@ struct CardView_Previews: PreviewProvider {
 
 struct CardsView: View {
     var body: some View {
-        VStack (alignment: .leading, spacing: 16.0){
-            
-            HStack {
-                Spacer()
-                Image("BackGround")
-                    .resizable()
-                    .frame(width: 45, height: 45, alignment: .trailing)
-                    .cornerRadius(12)
+        NavigationLink(destination: DetailsView()) {
+            VStack (alignment: .leading, spacing: 16.0){
+                
+                HStack {
+                    Spacer()
+                    Image("BackGround")
+                        .resizable()
+                        .frame(width: 45, height: 45, alignment: .trailing)
+                        .cornerRadius(12)
+                }
+                Text("Best Musics")
+                    .font(.title.bold())
+                Text("These are the best songs of my year 2022.")
+                    .opacity(0.7)
+                Text("Since day 01.")
+                    .blendMode(.overlay)
             }
-            Text("Best Musics")
-                .font(.title.bold())
-            Text("These are the best songs of my year 2022.")
-                .opacity(0.7)
-            Text("Since day 01.")
-                .blendMode(.overlay)
-        }
-        .padding(.all)
-        .frame(width: 200, height: 250)
-        .foregroundColor(.white)
-        .background(Image("BackGround"))
+            .padding(.all)
+            .frame(width: 200, height: 250)
+            .foregroundColor(.white)
+            .background(Image("BackGround"))
         .cornerRadius(30)
+        }
     }
 }

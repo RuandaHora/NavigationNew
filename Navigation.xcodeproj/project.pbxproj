@@ -18,6 +18,7 @@
 		88451CED296F8EC800EA98A8 /* Mensageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CEC296F8EC800EA98A8 /* Mensageview.swift */; };
 		88451CF1296F9F0500EA98A8 /* CourseItem .swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CF0296F9F0500EA98A8 /* CourseItem .swift */; };
 		88451CF3296FA07800EA98A8 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88451CF2296FA07800EA98A8 /* CourseView.swift */; };
+		886D77702971B56C005EB726 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D776F2971B56B005EB726 /* DetailsView.swift */; };
 		88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE0CB62970D8CE00DF460D /* CardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		88451CEC296F8EC800EA98A8 /* Mensageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensageview.swift; sourceTree = "<group>"; };
 		88451CF0296F9F0500EA98A8 /* CourseItem .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseItem .swift"; sourceTree = "<group>"; };
 		88451CF2296FA07800EA98A8 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		886D776F2971B56B005EB726 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		88CE0CB62970D8CE00DF460D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				88451CEC296F8EC800EA98A8 /* Mensageview.swift */,
 				88451CF2296FA07800EA98A8 /* CourseView.swift */,
 				88CE0CB62970D8CE00DF460D /* CardView.swift */,
+				886D776F2971B56B005EB726 /* DetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				88451CCC296E1DDF00EA98A8 /* NavigationApp.swift in Sources */,
 				88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */,
 				88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */,
+				886D77702971B56C005EB726 /* DetailsView.swift in Sources */,
 				88451CDE296E2F6D00EA98A8 /* NavigationBar.swift in Sources */,
 				88451CF3296FA07800EA98A8 /* CourseView.swift in Sources */,
 				88451CE4296E5FC000EA98A8 /* AccontView.swift in Sources */,

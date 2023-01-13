@@ -14,14 +14,14 @@ struct HomeView: View {
                 .background(Image("GeneralBackground"))
             ScrollView (.vertical){
                 VStack{
-                    HStack{
-                        Bar()
-                    }
+                        HStack{
+                            Bar()
+                        }
                     HStack {
                             Mensage()
                     }
                     ScrollView(.horizontal){
-                        HStack {
+                        HStack (spacing: 16) {
                             ForEach(0 ..< 5) { item in
                                 CardsView()
                             }
