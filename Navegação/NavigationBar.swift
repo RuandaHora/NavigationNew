@@ -2,16 +2,29 @@
 import SwiftUI
 
 struct NavigationBar: View {
+    var body: some View {
+        HStack {
+            Bar()
+        }
+    }
+}
+
+struct NavigationBar_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationBar()
+    }
+}
+
+
+struct Bar: View {
     @State var show = false
     @State var search = ""
-    
     var body: some View {
         ZStack{
-            RoundedRectangle(cornerRadius: 0)
-            .fill(Color("DarkMode"))
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .ignoresSafeArea()
-
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(width: 0, height: 0)
+                    .background(Image("GeneralBackground"))
+            
             VStack{
                 Divider()
                 HStack{
@@ -60,10 +73,3 @@ struct NavigationBar: View {
         }
     }
 }
-
-struct NavigationBar_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationBar()
-    }
-}
-
