@@ -6,11 +6,12 @@ struct CardView: View {
         VStack {
             VStack (alignment: .leading, spacing: 16.0){
                 
-                VStack {
+                HStack {
+                    Spacer()
                     Image("BackGround")
                         .resizable()
                         .frame(width: 45, height: 45, alignment: .trailing)
-                    .cornerRadius(12)
+                        .cornerRadius(12)
                 }
                 Text("Best Musics")
                     .font(.title.bold())
@@ -20,7 +21,7 @@ struct CardView: View {
                     .blendMode(.overlay)
             }
                 .padding(.all)
-                .frame(width: 300, height: 300)
+                .frame(width: 300, height: 250)
                 .foregroundColor(.white)
                 .background(Image("BackGround"))
                 .cornerRadius(30)
