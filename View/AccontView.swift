@@ -43,15 +43,19 @@ struct AccontView: View {
                             Image("Insta")
                                 .resizable()
                                 .frame(width: 25, height: 25)
+                                
                             Image("Face")
                                 .resizable()
                                 .frame(width: 25, height: 25)
+                                
                             Image("Linke")
                                 .resizable()
                                 .frame(width: 25, height: 25)
+                               
                             Image("GitHub")
                                 .resizable()
                                 .frame(width: 25, height: 25)
+                                
                             
                         }
                         .foregroundColor(Color("LetraA"))
@@ -59,6 +63,7 @@ struct AccontView: View {
                         .background(.ultraThinMaterial)
                         .cornerRadius(10)
                         .font(.headline)
+                        .matchedGeometryEffect(id: "text", in: namespace)
                     } else {
                         VStack (alignment: .leading){
                             Text("GITHUB: https://github.com/RuandaHora")
@@ -75,11 +80,14 @@ struct AccontView: View {
                         .background(.ultraThinMaterial)
                         .cornerRadius(10)
                         .font(.headline)
+                        .matchedGeometryEffect(id: "text", in: namespace)
                     }
                 }
           Divider()
             }.onTapGesture {
-                show.toggle()
+                withAnimation (.spring(response: 0.6, dampingFraction: 0.5)){
+                    show.toggle()
+                }
             }
         }
     }
