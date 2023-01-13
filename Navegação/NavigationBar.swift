@@ -22,11 +22,11 @@ struct Bar: View {
     var body: some View {
         ZStack{
             VStack{
-                Divider()
                 HStack{
                     Text("")
                         
                         .navigationTitle("Featured")
+                        .foregroundColor(Color("featured"))
                     VStack (alignment: .trailing) {
                         HStack{
                             Spacer()
