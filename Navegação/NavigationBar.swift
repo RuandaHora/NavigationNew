@@ -28,10 +28,10 @@ struct Bar: View {
             VStack{
                 Divider()
                 HStack{
-                    Text("Home ")
+                    Text("Featured ")
                         .font(.title.bold())
-                        .foregroundColor(.primary)
                         .padding(.horizontal, 20)
+                        .foregroundColor(Color("featured"))
                     VStack (alignment: .trailing) {
                         HStack{
                             Spacer()
