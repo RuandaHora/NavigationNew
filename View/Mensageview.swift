@@ -26,7 +26,7 @@ struct Mensage: View {
                 VStack (alignment: .leading, spacing: 12) {
                     Spacer()
                     VStack (alignment: .leading, spacing: 12) {
-                        Text("Ruan mensagens")
+                        Text("Mensagens")
                             .font(.largeTitle.bold())
                             .matchedGeometryEffect(id: "title", in: namespace)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -60,7 +60,7 @@ struct Mensage: View {
                 
             }
             else {
-                ScrollView {
+                VStack {
                     VStack{
                         Spacer()
                         
@@ -77,7 +77,7 @@ struct Mensage: View {
                                 .matchedGeometryEffect(id: "mask", in: namespace))
                         .overlay(
                             VStack(alignment: .leading, spacing: 12) {
-                                Text("Ruan mensagens")
+                                Text("Mensagens")
                                     .font(.largeTitle.bold())
                                     .matchedGeometryEffect(id: "title", in: namespace)
                                     .frame(maxWidth: .infinity, alignment: .leading)

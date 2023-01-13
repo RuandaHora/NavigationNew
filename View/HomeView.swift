@@ -27,6 +27,12 @@ struct HomeView: View {
                             }
                         }
                     }
+                    
+                    ScrollView {
+                        HStack {
+                                Mensage()
+                        }
+                    }
                 }
             }
         }
