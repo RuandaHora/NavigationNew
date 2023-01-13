@@ -22,7 +22,7 @@ struct DetailsView: View {
                         Image("nord")
                             .resizable()
                             .frame(width: 45, height: 45, alignment: .trailing)
-                            .cornerRadius(12)
+                            .cornerRadius(100)
                     }
                     Text("Best Musics")
                         .font(.title.bold())

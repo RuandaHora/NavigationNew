@@ -13,7 +13,7 @@ struct HomeView: View {
                 .frame(width: 0, height: 0)
                 .background(Image("GeneralBackground"))
             ScrollView (.vertical){
-                VStack (spacing: 20){
+                VStack (spacing: 16){
                         HStack{
                             Bar()
                         }
@@ -22,15 +22,17 @@ struct HomeView: View {
                     }
                     ScrollView(.horizontal){
                         HStack (spacing: 16) {
-                            ForEach(0 ..< 5) { item in
+                            ForEach(0 ..< 2) { item in
                                 CardsView()
+                                Cards2View()
                             }
                         }
                     }
                     ScrollView (.horizontal) {
                         HStack (spacing: 16) {
-                            ForEach(0 ..< 5) { item in
+                            ForEach(0 ..< 2) { item in
                                 Cards2View()
+                                CardsView()
                             }
                         }
                     }
