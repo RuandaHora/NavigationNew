@@ -31,7 +31,7 @@ struct CardsView: View {
                         .frame(width: 45, height: 45, alignment: .trailing)
                         .cornerRadius(100)
                 }
-                Text("Best Musics")
+                Text("Best Music")
                     .font(.title.bold())
                 Text("These are the best songs of my year 2022.")
                     .opacity(0.7)
