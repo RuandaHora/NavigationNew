@@ -8,15 +8,24 @@ struct HomeView: View {
     @State var notificacao = "notificacao"
     
     var body: some View {
-        ZStack{
-            HStack{
-                Bar()
-            }
-            
-            ScrollView(.horizontal){
-                HStack {
-                    ForEach(0 ..< 5) { item in
-                        CardsView()
+        ZStack {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: 0, height: 0)
+                .background(Image("GeneralBackground"))
+            ScrollView (.vertical){
+                VStack{
+                    HStack{
+                        Bar()
+                    }
+                    HStack {
+                            Mensage()
+                    }
+                    ScrollView(.horizontal){
+                        HStack {
+                            ForEach(0 ..< 5) { item in
+                                CardsView()
+                            }
+                        }
                     }
                 }
             }

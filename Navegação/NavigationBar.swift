@@ -21,10 +21,6 @@ struct Bar: View {
     @State var search = ""
     var body: some View {
         ZStack{
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: 0, height: 0)
-                    .background(Image("GeneralBackground"))
-            
             VStack{
                 Divider()
                 HStack{

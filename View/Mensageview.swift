@@ -22,10 +22,6 @@ struct Mensage: View {
     @State var notificacao = "notificacao"
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 0)
-                .fill(Color("DarkMode"))
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .ignoresSafeArea()
             if !show {
                 VStack (alignment: .leading, spacing: 12) {
                     Spacer()
@@ -45,7 +41,7 @@ struct Mensage: View {
                             Rectangle()
                                 .fill(.ultraThinMaterial)
                                 .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                                .blur(radius: 30)
+                                .blur(radius: 50)
                                 .matchedGeometryEffect(id: "blur", in: namespace))
                     
                 }
