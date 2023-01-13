@@ -1,48 +1,54 @@
+//
+//  Card2View.swift
+//  Navigation
+//
+//  Created by Marcelo Hora on 13/01/23.
+//
 
 import SwiftUI
 
-struct CardView: View {
+struct Card2View: View {
     var body: some View {
-        ScrollView(.horizontal){
+        ScrollView(.horizontal) {
             HStack {
                 ForEach(0 ..< 5) { item in
-                    CardsView()
+                    Cards2View()
                 }
             }
         }
     }
 }
 
-struct CardView_Previews: PreviewProvider {
+struct Card2View_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        Card2View()
     }
 }
 
-struct CardsView: View {
+struct Cards2View: View {
     var body: some View {
-        NavigationLink(destination: DetailsView()) {
+        NavigationLink(destination: Details2View()) {
             VStack (alignment: .leading, spacing: 16.0){
                 
                 HStack {
                     Spacer()
-                    Image("nord")
+                    Image("BackGround2")
                         .resizable()
                         .frame(width: 45, height: 45, alignment: .trailing)
                         .cornerRadius(12)
                 }
-                Text("Best Musics")
+                Text("SwiftUI for IOS 16")
                     .font(.title.bold())
-                Text("These are the best songs of my year 2022.")
+                Text("SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift.")
                     .opacity(0.7)
-                Text("Since day 01.")
+                Text("Created by apple.")
                     .blendMode(.overlay)
             }
             .padding(.all)
             .frame(width: 200, height: 250)
             .foregroundColor(.white)
-            .background(Image("BackGround"))
-        .cornerRadius(30)
+            .background(.ultraThinMaterial)
+            .cornerRadius(30)
         }
     }
 }
