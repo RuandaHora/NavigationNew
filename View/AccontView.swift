@@ -63,7 +63,7 @@ struct AccontView: View {
                         .background(.ultraThinMaterial)
                         .cornerRadius(10)
                         .font(.headline)
-                        .matchedGeometryEffect(id: "text", in: namespace)
+                        .matchedGeometryEffect(id: "padding", in: namespace)
                     } else {
                         VStack (alignment: .leading){
                             Text("GITHUB: https://github.com/RuandaHora")
@@ -80,10 +80,10 @@ struct AccontView: View {
                         .background(.ultraThinMaterial)
                         .cornerRadius(10)
                         .font(.headline)
-                        .matchedGeometryEffect(id: "text", in: namespace)
+                        .matchedGeometryEffect(id: "padding", in: namespace)
                     }
                 }
-          Divider()
+         
             }.onTapGesture {
                 withAnimation (.spring(response: 0.6, dampingFraction: 0.5)){
                     show.toggle()
