@@ -14,9 +14,12 @@ struct HomeView: View {
                 .background(Image("Verde"))
             ScrollView (.vertical){
                 VStack (spacing: 16){
+                    VStack {
+                        Text("")
                         HStack{
-                            Bar()
+                                Bar()
                         }
+                    }
                     HStack {
                             Mensages()
                     }
