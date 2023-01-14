@@ -12,35 +12,34 @@ struct Details3View: View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 0, height: 0)
-                .background(Image("GeneralBackground"))
+                .background(Image("Verde"))
             ScrollView {
                 VStack (alignment: .leading, spacing: 16.0){
                     
                     HStack {
                         Spacer()
-                        Image("BackGround2")
+                        Image("Camera")
                             .resizable()
                             .frame(width: 45, height: 45, alignment: .trailing)
                             .cornerRadius(12)
                     }
-                    Text("SwiftUI for IOS 16")
+                    Text("Best Photos")
                         .font(.title.bold())
-                    Text("SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift.")
+                    Text("Best photos of the year 2022.")
                         .opacity(0.7)
-                    Text("Created by apple.")
+                    Text("Created by Ruan.")
                         .blendMode(.overlay)
                 }
                 .padding(.all)
                 .foregroundColor(.white)
-                .background(.ultraThinMaterial)
+                .background(Image("Card3"))
                 .cornerRadius(20)
                 
                 VStack (alignment: .leading, spacing: 16){
-                    Text("Gospel is the key word of what you heard most during the year 2022")
-                        .font(.headline)
-                    Text("SwiftUI")
+                    
+                    Text("Photos")
                         .font(.title.bold())
-                    Text("SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift — and surprisingly little code. You can bring even better experiences to everyone, on any Apple device, using just one set of tools and APIs.")
+                    Text("Here's a look back at the best photos of 2022, so get ready...")
                         .blendMode(.overlay)
                 }
                 .padding()

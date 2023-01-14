@@ -31,16 +31,16 @@ struct Cards3View: View {
             VStack (alignment: .leading, spacing: 16.0){
                 HStack {
                     Spacer()
-                    Image("BackGround2")
+                    Image("Camera")
                         .resizable()
                         .frame(width: 45, height: 45, alignment: .trailing)
                         .cornerRadius(12)
                 }
-                Text("SwiftUI for IOS 16")
+                Text("Best Photos")
                     .font(.title.bold())
-                Text("SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift.")
+                Text("Best photos of the year 2022.")
                     .opacity(0.7)
-                Text("Created by apple.")
+                Text("Created by Ruan.")
                     .blendMode(.overlay)
             }
             .padding(.all)

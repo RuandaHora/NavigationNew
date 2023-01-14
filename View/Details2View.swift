@@ -36,8 +36,7 @@ struct Details2View: View {
                 .cornerRadius(20)
                 
                 VStack (alignment: .leading, spacing: 16){
-                    Text("Gospel is the key word of what you heard most during the year 2022")
-                        .font(.headline)
+                    
                     Text("SwiftUI")
                         .font(.title.bold())
                     Text("SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift — and surprisingly little code. You can bring even better experiences to everyone, on any Apple device, using just one set of tools and APIs.")
