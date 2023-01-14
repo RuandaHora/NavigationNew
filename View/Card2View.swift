@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Card2View: View {
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(0 ..< 5) { item in
                     Cards2View()

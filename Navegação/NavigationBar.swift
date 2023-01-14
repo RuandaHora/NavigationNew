@@ -25,7 +25,7 @@ struct Bar: View {
                 VStack{
                         HStack{
                             HStack {
-                                Text("Featured")
+                                Text("   Featured")
                                     .font(.largeTitle.bold())
                                     .foregroundColor(.white)
                                 Spacer()

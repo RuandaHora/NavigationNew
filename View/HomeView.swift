@@ -20,18 +20,18 @@ struct HomeView: View {
                     HStack {
                             Mensages()
                     }
-                    ScrollView(.horizontal){
+                    ScrollView(.horizontal, showsIndicators: false){
                         HStack {
-                            ForEach(0 ..< 3) { item in
+                            ForEach(0 ..< 1) { item in
                                 CardsView()
                                 Cards2View()
                                 Cards3View()
                             }
                         }
                     }
-                    ScrollView (.horizontal) {
+                    ScrollView (.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(0 ..< 3) { item in
+                            ForEach(0 ..< 1) { item in
                                 Cards3View()
                                 CardsView()
                                 Cards2View()
