@@ -47,15 +47,10 @@ struct Details3View: View {
                 
                 ScrollView (.horizontal) {
                     HStack {
-                        Divider()
                         Fotos4()
-                        Divider()
                         Fotos1()
-                        Divider()
                         Fotos2()
-                        Divider()
                         Fotos3()
-                        Divider()
                     }
                     
                 }

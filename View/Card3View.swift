@@ -27,7 +27,7 @@ struct Card3View_Previews: PreviewProvider {
 
 struct Cards3View: View {
     var body: some View {
-        NavigationLink(destination: Details2View()) {
+        NavigationLink(destination: Details3View()) {
             VStack (alignment: .leading, spacing: 16.0){
                 HStack {
                     Spacer()
