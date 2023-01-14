@@ -44,6 +44,21 @@ struct Details3View: View {
                 }
                 .padding()
                 .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+                
+                ScrollView (.horizontal) {
+                    HStack {
+                        Divider()
+                        Fotos4()
+                        Divider()
+                        Fotos1()
+                        Divider()
+                        Fotos2()
+                        Divider()
+                        Fotos3()
+                        Divider()
+                    }
+                    
+                }
             }
         }
     }
