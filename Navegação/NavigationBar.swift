@@ -22,13 +22,14 @@ struct Bar: View {
     var body: some View {
         ZStack{
             VStack{
-                HStack{
-                    Text("")
-                        .navigationTitle("Featured")
-                        .foregroundColor(Color("featured"))
-                    VStack {
+                VStack{
                         HStack{
-                            Spacer()
+                            HStack {
+                                Text("Featured")
+                                    .font(.largeTitle.bold())
+                                    .foregroundColor(.white)
+                                Spacer()
+                            }
                             HStack{
                                 if !show {
                                     Image("Lupa")
@@ -60,7 +61,6 @@ struct Bar: View {
                                 }
                             }
                         }
-                    }
                 }
                 Spacer()
             }

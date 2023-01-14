@@ -18,7 +18,7 @@ struct HomeView: View {
                             Bar()
                         }
                     HStack {
-                            Mensage()
+                            Mensages()
                     }
                     ScrollView(.horizontal){
                         HStack {
