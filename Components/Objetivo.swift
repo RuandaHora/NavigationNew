@@ -47,7 +47,7 @@ struct Objective: View {
                     .matchedGeometryEffect(id: "padding", in: namespace)
                 } else {
                     VStack {
-                        Text("Estudando Desenvolvimento IOS! E me esforçando para conseguir minha primeira vaga! E ser um Dev de Referência Mundial!")
+                        Text("Estudando Desenvolvimento IOS! E me esforçando para conseguir minha primeira vaga! E ser um Dev de Referência Mundial!!")
                             .padding(1)
                     }
                     .foregroundColor(Color("LetraA"))
