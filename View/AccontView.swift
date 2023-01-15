@@ -32,15 +32,21 @@ struct AccontView: View {
                 }
                 .foregroundColor(Color("LetraA"))
                 .frame(width: 250, height: 90)
-                
                 .background(.ultraThinMaterial)
                 .cornerRadius(10)
                 .font(.headline)
-                Divider()
+                Spacer()
+                Spacer()
+                HStack {
+                    Objective()
+                }
+                Spacer()
+                Spacer()
                 VStack{
                     HStack {
                         RedesSociaiss()
                     }
+                    
                 }
             }
         }
