@@ -12,7 +12,7 @@ struct Details2View: View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 0, height: 0)
-                .background(Image("GeneralBackground"))
+                .background(Image("Laranja"))
             ScrollView {
                 VStack (alignment: .leading, spacing: 16.0){
                     
@@ -32,7 +32,7 @@ struct Details2View: View {
                 }
                 .padding(.all)
                 .foregroundColor(.white)
-                .background(.ultraThinMaterial)
+                .background(Image( "Laranja"))
                 .cornerRadius(20)
                 
                 VStack (alignment: .leading, spacing: 16){

@@ -10,7 +10,7 @@ struct AccontView: View {
         ZStack{
             RoundedRectangle(cornerRadius: 0)
                 .frame(width: 0, height: 0)
-                .background(Image("Verde"))
+                .background(Image("Azul"))
             
             ScrollView{
                 NavigationLink(destination: Perfil()) {

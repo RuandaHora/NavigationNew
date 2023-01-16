@@ -11,7 +11,7 @@ struct HomeView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 0, height: 0)
-                .background(Image("Verde"))
+                .background(Image("Azul"))
             ScrollView (.vertical){
                 VStack (spacing: 16){
                     VStack {
