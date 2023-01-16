@@ -10,7 +10,7 @@ struct AccontView: View {
         ZStack{
             RoundedRectangle(cornerRadius: 0)
                 .frame(width: 0, height: 0)
-                .background(Image("Azul"))
+                .background(Image("Laranja"))
             
             ScrollView{
                 NavigationLink(destination: Perfil()) {
@@ -18,16 +18,17 @@ struct AccontView: View {
                         Image("Image 2")
                             .resizable()
                     }
-                    .background(Color.purple)
+                    .background(Image("Laranja"))
                     .frame(width: 200, height: 200)
                     .cornerRadius(100)
-                }
-                Divider()
+           }
+                Spacer()
+                Spacer()
                 VStack (alignment: .leading){
                     Text("Nome: Ruan da Hora.")
                     Text("Idade: 18 anos.")
                     Text("País: Brasil.")
-                    
+                  
                     
                 }
                 .foregroundColor(Color("LetraA"))

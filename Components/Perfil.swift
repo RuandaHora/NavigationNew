@@ -13,9 +13,9 @@ struct Perfil: View {
                 Image("Image 2")
                     .resizable()
             }
-            .background(Color.purple)
+            .background(Image("Laranja"))
             .frame(width: 500, height: 500)
-            .cornerRadius(100)
+            .cornerRadius(0)
             
         }
     }
