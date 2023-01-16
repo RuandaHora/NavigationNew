@@ -32,7 +32,6 @@ struct Details2View: View {
                 }
                 .padding(.all)
                 .foregroundColor(.white)
-                .background(Image( "Laranja"))
                 .cornerRadius(20)
                 
                 VStack (alignment: .leading, spacing: 16){
