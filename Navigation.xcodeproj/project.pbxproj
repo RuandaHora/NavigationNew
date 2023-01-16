@@ -31,6 +31,7 @@
 		886D7786297389B2005EB726 /* RedesSociais.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D7785297389B2005EB726 /* RedesSociais.swift */; };
 		886D778829738F16005EB726 /* Objetivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D778729738F16005EB726 /* Objetivo.swift */; };
 		88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE0CB62970D8CE00DF460D /* CardView.swift */; };
+		88E139A82974F7CC00AE723B /* MsPrivado1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E139A72974F7CC00AE723B /* MsPrivado1View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		886D7785297389B2005EB726 /* RedesSociais.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedesSociais.swift; sourceTree = "<group>"; };
 		886D778729738F16005EB726 /* Objetivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objetivo.swift; sourceTree = "<group>"; };
 		88CE0CB62970D8CE00DF460D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		88E139A72974F7CC00AE723B /* MsPrivado1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado1View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				886D77732971C038005EB726 /* Details2View.swift */,
 				886D777529720EC5005EB726 /* Card3View.swift */,
 				886D777729720EE9005EB726 /* Details3View.swift */,
+				88E139A72974F7CC00AE723B /* MsPrivado1View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				886D777C297232AB005EB726 /* Foto 2.swift in Sources */,
 				88451CEB296F8BB900EA98A8 /* HomeView.swift in Sources */,
 				886D7786297389B2005EB726 /* RedesSociais.swift in Sources */,
+				88E139A82974F7CC00AE723B /* MsPrivado1View.swift in Sources */,
 				886D77742971C038005EB726 /* Details2View.swift in Sources */,
 				88451CCC296E1DDF00EA98A8 /* NavigationApp.swift in Sources */,
 				88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */,
