@@ -47,7 +47,7 @@ struct Cards2View: View {
             .padding(.all)
             .frame(width: 180, height: 230)
             .foregroundColor(.white)
-            .background(.ultraThinMaterial)
+            .background(Image("Laranja"))
             .cornerRadius(30)
         }.padding(11.5)
     }
