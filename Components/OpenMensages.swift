@@ -9,6 +9,20 @@ import SwiftUI
 
 struct OpenMensages: View {
     var body: some View {
+        HStack {
+            Messages()
+        }
+    }
+}
+
+struct OpenMensages_Previews: PreviewProvider {
+    static var previews: some View {
+        OpenMensages()
+    }
+}
+
+struct Messages: View {
+    var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 0, height: 0)
@@ -20,11 +34,5 @@ struct OpenMensages: View {
                 }
             }
         }
-    }
-}
-
-struct OpenMensages_Previews: PreviewProvider {
-    static var previews: some View {
-        OpenMensages()
     }
 }

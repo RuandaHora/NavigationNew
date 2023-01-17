@@ -23,14 +23,9 @@ struct Bar: View {
         ZStack{
             VStack{
                 VStack{
-                        HStack{
-                            HStack {
-                                Text("   Featured")
-                                    .font(.largeTitle.bold())
-                                    .foregroundColor(.white)
-                                Spacer()
-                            }
+                    HStack{
                             HStack{
+                                Spacer()
                                 if !show {
                                     Image("Lupa")
                                         .resizable()

@@ -8,40 +8,41 @@ struct HomeView: View {
     @State var notificacao = "notificacao"
     
     var body: some View {
+        NavigationView {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 0, height: 0)
                 .background(Image("Verde"))
-            ScrollView (.vertical){
-                VStack (spacing: 16){
-                    VStack {
-                        Text("")
-                        HStack{
-                                Bar()
+                ScrollView (.vertical){
+                    VStack (spacing: 16){
+                        VStack {
+                            Text("")
                         }
-                    }
-                    HStack {
-                            Mensages()
-                    }
-                    ScrollView(.horizontal, showsIndicators: false){
                         HStack {
-                            ForEach(0 ..< 1) { item in
-                                CardsView()
-                                Cards2View()
-                                Cards3View()
+                                Mensages()
+                        }
+                        ScrollView(.horizontal, showsIndicators: false){
+                            HStack {
+                                ForEach(0 ..< 1) { item in
+                                    CardsView()
+                                    Cards2View()
+                                    Cards3View()
+                                }
                             }
                         }
-                    }
-                    ScrollView (.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(0 ..< 1) { item in
-                                Cards3View()
-                                CardsView()
-                                Cards2View()
+                        ScrollView (.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(0 ..< 1) { item in
+                                    Cards3View()
+                                    CardsView()
+                                    Cards2View()
+                                }
                             }
                         }
                     }
                 }
+                .navigationTitle("Featured")
+                .foregroundColor(.white)
             }
         }
     }

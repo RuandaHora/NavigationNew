@@ -38,6 +38,7 @@
 		88F6748D29773408001C4E8C /* Accont3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6748C29773408001C4E8C /* Accont3View.swift */; };
 		88F6748F29773553001C4E8C /* Perfil2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6748E29773553001C4E8C /* Perfil2.swift */; };
 		88F6749129773562001C4E8C /* Perfil3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6749029773562001C4E8C /* Perfil3.swift */; };
+		88F674932977503E001C4E8C /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F674922977503E001C4E8C /* FeaturedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		88F6748C29773408001C4E8C /* Accont3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accont3View.swift; sourceTree = "<group>"; };
 		88F6748E29773553001C4E8C /* Perfil2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil2.swift; sourceTree = "<group>"; };
 		88F6749029773562001C4E8C /* Perfil3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil3.swift; sourceTree = "<group>"; };
+		88F674922977503E001C4E8C /* FeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				88451CDD296E2F6D00EA98A8 /* NavigationBar.swift */,
+				88F674922977503E001C4E8C /* FeaturedView.swift */,
 			);
 			name = "Navegação";
 			path = "Navegação";
@@ -253,6 +256,7 @@
 				88E139A82974F7CC00AE723B /* MsPrivado1View.swift in Sources */,
 				886D77742971C038005EB726 /* Details2View.swift in Sources */,
 				88451CCC296E1DDF00EA98A8 /* NavigationApp.swift in Sources */,
+				88F674932977503E001C4E8C /* FeaturedView.swift in Sources */,
 				88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */,
 				88F67487297656EB001C4E8C /* MsPrivado2View.swift in Sources */,
 				886D777629720EC5005EB726 /* Card3View.swift in Sources */,
