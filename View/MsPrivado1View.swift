@@ -17,17 +17,23 @@ struct MsPrivado1View: View {
                     .frame(width: 0, height: 0)
                     .background(Image("Verde"))
                 VStack{
-                    Spacer()
                     HStack{
+                        Spacer()
                         NavigationLink (destination: AccontView()) {
                             Image("Image 2")
                                 .resizable()
-                                .frame(width: 36, height: 39)
-                                .cornerRadius(10)
+                                .background(Image("Laranja"))
+                                .frame(width: 50, height: 50)
+                                .cornerRadius(100)
                                 .padding(8)
-                                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                            
+                            Spacer()
                         }
-                            TextField("Digite", text: self.$search)
+                    }
+                    Spacer()
+                    HStack{
+                        
+                            TextField("  Digite", text: self.$search)
                                 .frame(width: 250, height: 40)
                                 .background(.ultraThinMaterial)
                                 .cornerRadius(20)
