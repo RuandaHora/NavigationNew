@@ -77,24 +77,24 @@ struct OpenMensagess: View {
                             .matchedGeometryEffect(id: "sutitle", in: namespace)
                         
                         Divider()
-                        HStack{
-                            Button(action: {}) {
-                                Image("Image 1")
-                                    .resizable()
-                                    .frame(width: 26, height: 26)
-                                    .cornerRadius(10)
-                                    .padding(8)
-                                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                                
-                                Text("Eae Ruan, como vão as coisas ?")
-                                    .font(.footnote)
-                                Spacer()
-                                Text("1")
-                                
-                                    .padding(5)
-                                    .foregroundColor(Color.white)
-                                    .frame(alignment: .trailing)
-                                
+                        NavigationLink(destination: MsPrivado2()) {
+                            HStack{
+                                    Image("Image 1")
+                                        .resizable()
+                                        .frame(width: 26, height: 26)
+                                        .cornerRadius(10)
+                                        .padding(8)
+                                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                                    
+                                    Text("Eae Ruan, como vão as coisas ?")
+                                        .font(.footnote)
+                                    Spacer()
+                                    Text("1")
+                                    
+                                        .padding(5)
+                                        .foregroundColor(Color.white)
+                                        .frame(alignment: .trailing)
+                                    
                             }.background(Color.blue)
                                 .cornerRadius(20)
                                 .font(.footnote.bold())
@@ -125,29 +125,29 @@ struct OpenMensagess: View {
                                     .font(.footnote.bold())
                         }
                         Divider()
-                        HStack{
-                            Button(action: {}) {
-                                Image("Image 3")
-                                    .resizable()
-                                    .frame(width: 26, height: 26)
-                                    .cornerRadius(10)
-                                    .padding(8)
-                                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                                Text("Opaaa, bora num play hj ?")
-                                    .font(.footnote)
-                                Spacer()
-                                Text("2")
+                        NavigationLink(destination: MsPrivado3()) {
+                            HStack{
+                                    Image("Image 3")
+                                        .resizable()
+                                        .frame(width: 26, height: 26)
+                                        .cornerRadius(10)
+                                        .padding(8)
+                                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                                    Text("Opaaa, bora num play hj ?")
+                                        .font(.footnote)
+                                    Spacer()
+                                    Text("2")
+                                    
+                                    
+                                        .padding(5)
+                                        .background(Color.blue)
+                                        .cornerRadius(20)
+                                        .font(.footnote.bold())
                                 
-                                
-                                    .padding(5)
-                                    .background(Color.blue)
-                                    .cornerRadius(20)
-                                    .font(.footnote.bold())
-                            }
-                            
-                        }.background(Color.blue)
-                            .cornerRadius(20)
+                            }.background(Color.blue)
+                                .cornerRadius(20)
                             .font(.footnote.bold())
+                        }
                     }
                         .padding(20)
                         .foregroundColor(.white)
