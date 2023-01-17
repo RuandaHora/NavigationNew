@@ -9,7 +9,21 @@ import SwiftUI
 
 struct MsPrivado1View: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            VStack{
+                HStack{
+                    
+                    NavigationLink (destination: AccontView()) {
+                        Image("Image 2")
+                            .resizable()
+                            .frame(width: 36, height: 39)
+                            .cornerRadius(10)
+                            .padding(8)
+                            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    }
+                }
+            }
+        }
     }
 }
 
