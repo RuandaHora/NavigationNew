@@ -36,6 +36,8 @@
 		88F67489297656FE001C4E8C /* MsPrivado3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F67488297656FE001C4E8C /* MsPrivado3View.swift */; };
 		88F6748B297733EC001C4E8C /* Accont2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6748A297733EC001C4E8C /* Accont2View.swift */; };
 		88F6748D29773408001C4E8C /* Accont3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6748C29773408001C4E8C /* Accont3View.swift */; };
+		88F6748F29773553001C4E8C /* Perfil2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6748E29773553001C4E8C /* Perfil2.swift */; };
+		88F6749129773562001C4E8C /* Perfil3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6749029773562001C4E8C /* Perfil3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		88F67488297656FE001C4E8C /* MsPrivado3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado3View.swift; sourceTree = "<group>"; };
 		88F6748A297733EC001C4E8C /* Accont2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accont2View.swift; sourceTree = "<group>"; };
 		88F6748C29773408001C4E8C /* Accont3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accont3View.swift; sourceTree = "<group>"; };
+		88F6748E29773553001C4E8C /* Perfil2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil2.swift; sourceTree = "<group>"; };
+		88F6749029773562001C4E8C /* Perfil3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 				886D77832973121F005EB726 /* Mensages.swift */,
 				886D7785297389B2005EB726 /* RedesSociais.swift */,
 				886D778729738F16005EB726 /* Objetivo.swift */,
+				88F6748E29773553001C4E8C /* Perfil2.swift */,
+				88F6749029773562001C4E8C /* Perfil3.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 				88451CEB296F8BB900EA98A8 /* HomeView.swift in Sources */,
 				886D7786297389B2005EB726 /* RedesSociais.swift in Sources */,
 				88F6748B297733EC001C4E8C /* Accont2View.swift in Sources */,
+				88F6749129773562001C4E8C /* Perfil3.swift in Sources */,
 				88E139A82974F7CC00AE723B /* MsPrivado1View.swift in Sources */,
 				886D77742971C038005EB726 /* Details2View.swift in Sources */,
 				88451CCC296E1DDF00EA98A8 /* NavigationApp.swift in Sources */,
@@ -261,6 +268,7 @@
 				886D778829738F16005EB726 /* Objetivo.swift in Sources */,
 				88451CF3296FA07800EA98A8 /* CourseView.swift in Sources */,
 				88F6748D29773408001C4E8C /* Accont3View.swift in Sources */,
+				88F6748F29773553001C4E8C /* Perfil2.swift in Sources */,
 				88451CE4296E5FC000EA98A8 /* AccontView.swift in Sources */,
 				88451CED296F8EC800EA98A8 /* Mensageview.swift in Sources */,
 				886D777A2972328E005EB726 /* Foto1.swift in Sources */,

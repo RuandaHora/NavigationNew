@@ -22,8 +22,11 @@ struct AccontView: View {
                     .frame(width: 200, height: 200)
                     .cornerRadius(100)
            }
-                Spacer()
-                Spacer()
+                VStack (alignment: .leading){
+                    Text("Ruan da Hora")
+                        .font(.largeTitle.bold())
+                        .foregroundColor(.white)
+                }
                 VStack (alignment: .leading){
                     Text("Nome: Ruan da Hora.")
                     Text("Idade: 18 anos.")

@@ -15,9 +15,9 @@ struct Accont3View: View {
                 .background(Image("Verde"))
             
             ScrollView{
-                NavigationLink(destination: Perfil()) {
+                NavigationLink(destination: Perfil3()) {
                     VStack{
-                        Image("Image 2")
+                        Image("Image 3")
                             .resizable()
                     }
                     .background(Image("Laranja"))
@@ -27,8 +27,13 @@ struct Accont3View: View {
                 Spacer()
                 Spacer()
                 VStack (alignment: .leading){
-                    Text("Nome: Ruan da Hora.")
-                    Text("Idade: 18 anos.")
+                    Text("Alex")
+                        .font(.largeTitle.bold())
+                        .foregroundColor(.white)
+                }
+                VStack (alignment: .leading){
+                    Text("Nome: Alex.")
+                    Text("Idade: 35 anos.")
                     Text("País: Brasil.")
                     
                     
@@ -38,19 +43,6 @@ struct Accont3View: View {
                 .background(.ultraThinMaterial)
                 .cornerRadius(10)
                 .font(.headline)
-                Spacer()
-                Spacer()
-                HStack {
-                    Objective()
-                }
-                Spacer()
-                Spacer()
-                VStack{
-                    HStack {
-                        RedesSociaiss()
-                    }
-                    
-                }
             }
         }
     }

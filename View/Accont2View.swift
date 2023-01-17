@@ -15,10 +15,11 @@ struct Accont2View: View {
                 .background(Image("Verde"))
             
             ScrollView{
-                NavigationLink(destination: Perfil()) {
+                NavigationLink(destination: Perfil2()) {
                     VStack{
-                        Image("Image 2")
+                        Image("Image 1")
                             .resizable()
+                            .frame(width:250, height: 200)
                     }
                     .background(Image("Laranja"))
                     .frame(width: 200, height: 200)
@@ -27,8 +28,13 @@ struct Accont2View: View {
                 Spacer()
                 Spacer()
                 VStack (alignment: .leading){
-                    Text("Nome: Ruan da Hora.")
-                    Text("Idade: 18 anos.")
+                    Text("Márcio")
+                        .font(.largeTitle.bold())
+                        .foregroundColor(.white)
+                }
+                VStack (alignment: .leading){
+                    Text("Nome: Marcio.")
+                    Text("Idade: 39 anos.")
                     Text("País: Brasil.")
                     
                     
@@ -38,19 +44,7 @@ struct Accont2View: View {
                 .background(.ultraThinMaterial)
                 .cornerRadius(10)
                 .font(.headline)
-                Spacer()
-                Spacer()
-                HStack {
-                    Objective()
-                }
-                Spacer()
-                Spacer()
-                VStack{
-                    HStack {
-                        RedesSociaiss()
-                    }
-                    
-                }
+                
             }
         }
     }
