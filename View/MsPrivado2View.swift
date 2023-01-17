@@ -38,16 +38,15 @@ struct MsPrivado2: View {
                     NavigationLink (destination: Accont2View()) {
                         Image("Image 1")
                             .resizable()
-                            .background(Image("Laranja"))
-                            .frame(width: 50, height: 50)
+                            .frame(width: 60, height: 50)//Enquadramento da imagem.
+                            .frame(width: 50, height: 50)//Enquandramento do circulo.
                             .cornerRadius(100)
-                            .padding(8)
                         Text("Marcio")
                             .font(.title2.bold())
                             .foregroundColor(.white)
                         
                         Spacer()
-                    }
+                    }.padding(8)
                 }
                 Spacer()
                 HStack {
