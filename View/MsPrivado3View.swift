@@ -1,27 +1,13 @@
 //
-//  MsPrivado1View.swift
+//  MsPrivado3View.swift
 //  Navigation
 //
-//  Created by Marcelo Hora on 16/01/23.
+//  Created by Marcelo Hora on 17/01/23.
 //
 
 import SwiftUI
 
-struct MsPrivado1View: View {
-    var body: some View {
-        HStack {
-            MsPrivado1()
-        }
-    }
-}
-
-struct MsPrivado1View_Previews: PreviewProvider {
-    static var previews: some View {
-        MsPrivado1View()
-    }
-}
-
-struct MsPrivado1: View {
+struct MsPrivado3View: View {
     @State var show = false
     @State var search = ""
     var body: some View {
@@ -67,5 +53,11 @@ struct MsPrivado1: View {
                 }
             }
         }
+    }
+}
+
+struct MsPrivado3View_Previews: PreviewProvider {
+    static var previews: some View {
+        MsPrivado3View()
     }
 }

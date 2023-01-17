@@ -32,6 +32,8 @@
 		886D778829738F16005EB726 /* Objetivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D778729738F16005EB726 /* Objetivo.swift */; };
 		88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE0CB62970D8CE00DF460D /* CardView.swift */; };
 		88E139A82974F7CC00AE723B /* MsPrivado1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E139A72974F7CC00AE723B /* MsPrivado1View.swift */; };
+		88F67487297656EB001C4E8C /* MsPrivado2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F67486297656EB001C4E8C /* MsPrivado2View.swift */; };
+		88F67489297656FE001C4E8C /* MsPrivado3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F67488297656FE001C4E8C /* MsPrivado3View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		886D778729738F16005EB726 /* Objetivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objetivo.swift; sourceTree = "<group>"; };
 		88CE0CB62970D8CE00DF460D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		88E139A72974F7CC00AE723B /* MsPrivado1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado1View.swift; sourceTree = "<group>"; };
+		88F67486297656EB001C4E8C /* MsPrivado2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado2View.swift; sourceTree = "<group>"; };
+		88F67488297656FE001C4E8C /* MsPrivado3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado3View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 				886D777529720EC5005EB726 /* Card3View.swift */,
 				886D777729720EE9005EB726 /* Details3View.swift */,
 				88E139A72974F7CC00AE723B /* MsPrivado1View.swift */,
+				88F67486297656EB001C4E8C /* MsPrivado2View.swift */,
+				88F67488297656FE001C4E8C /* MsPrivado3View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				886D77742971C038005EB726 /* Details2View.swift in Sources */,
 				88451CCC296E1DDF00EA98A8 /* NavigationApp.swift in Sources */,
 				88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */,
+				88F67487297656EB001C4E8C /* MsPrivado2View.swift in Sources */,
 				886D777629720EC5005EB726 /* Card3View.swift in Sources */,
 				886D77722971BD08005EB726 /* Card2View.swift in Sources */,
 				88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */,
@@ -243,6 +250,7 @@
 				886D77702971B56C005EB726 /* DetailsView.swift in Sources */,
 				88451CDE296E2F6D00EA98A8 /* NavigationBar.swift in Sources */,
 				886D7780297235A2005EB726 /* Foto4.swift in Sources */,
+				88F67489297656FE001C4E8C /* MsPrivado3View.swift in Sources */,
 				886D778829738F16005EB726 /* Objetivo.swift in Sources */,
 				88451CF3296FA07800EA98A8 /* CourseView.swift in Sources */,
 				88451CE4296E5FC000EA98A8 /* AccontView.swift in Sources */,

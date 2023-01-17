@@ -100,28 +100,29 @@ struct OpenMensagess: View {
                                 .font(.footnote.bold())
                         }
                         Divider()
-                        HStack{
-                            Button(action: {}) {
-                                Image("Image 2")
-                                    .resizable()
-                                    .frame(width: 26, height: 26)
-                                    .cornerRadius(10)
-                                    .padding(8)
-                                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                        NavigationLink(destination: MsPrivado1()) {
+                            HStack{
                                 
-                                Text("Fala meu mano, blz ?")
-                                    .font(.footnote)
-                                Spacer()
-                                Text("1")
-                                
-                                    .padding(5)
-                                    .frame(alignment: .trailing)
-                                    .background(Color.blue)
+                                    Image("Image 2")
+                                        .resizable()
+                                        .frame(width: 26, height: 26)
+                                        .cornerRadius(10)
+                                        .padding(8)
+                                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                                    
+                                    Text("Fala meu mano, blz ?")
+                                        .font(.footnote)
+                                    Spacer()
+                                    Text("1")
+                                    
+                                        .padding(5)
+                                        .frame(alignment: .trailing)
+                                        .background(Color.blue)
+                                        .cornerRadius(20)
+                                        .font(.footnote.bold())
+                                }.background(Color.blue)
                                     .cornerRadius(20)
                                     .font(.footnote.bold())
-                            }.background(Color.blue)
-                                .cornerRadius(20)
-                                .font(.footnote.bold())
                         }
                         Divider()
                         HStack{
