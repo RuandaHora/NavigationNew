@@ -8,18 +8,30 @@
 import SwiftUI
 
 struct MsPrivado1View: View {
+    @State var show = false
+    @State var search = ""
     var body: some View {
-        ZStack{
-            VStack{
-                HStack{
-                    
-                    NavigationLink (destination: AccontView()) {
-                        Image("Image 2")
-                            .resizable()
-                            .frame(width: 36, height: 39)
-                            .cornerRadius(10)
-                            .padding(8)
-                            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+        HStack {
+            ZStack{
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(width: 0, height: 0)
+                    .background(Image("Verde"))
+                VStack{
+                    Spacer()
+                    HStack{
+                        NavigationLink (destination: AccontView()) {
+                            Image("Image 2")
+                                .resizable()
+                                .frame(width: 36, height: 39)
+                                .cornerRadius(10)
+                                .padding(8)
+                                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                        }
+                            TextField("Digite", text: self.$search)
+                                .frame(width: 250, height: 40)
+                                .background(.ultraThinMaterial)
+                                .cornerRadius(20)
+                        
                     }
                 }
             }
