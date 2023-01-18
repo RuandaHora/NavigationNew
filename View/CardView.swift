@@ -2,13 +2,10 @@
 import SwiftUI
 
 struct CardView: View {
+    @State var show = false
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false){
-            HStack {
-                ForEach(0 ..< 5) { item in
-                    CardsView()
-                }
-            }
+        HStack {
+            CardsViewOpen()
         }
     }
 }
@@ -20,8 +17,8 @@ struct CardView_Previews: PreviewProvider {
 }
 
 struct CardsView: View {
+    @State var show = false
     var body: some View {
-        NavigationLink(destination: DetailsView()) {
             VStack (alignment: .leading, spacing: 16.0){
                 
                 HStack {
@@ -43,6 +40,22 @@ struct CardsView: View {
             .foregroundColor(.white)
             .background(Image("BackGround"))
         .cornerRadius(30)
-        }.padding(11.5)
+        .padding(11.5)
+    }
+}
+
+struct CardsViewOpen: View {
+    @State var show = false
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false){
+            HStack {
+                CardsView()
+                    .sheet(isPresented: $show, content:{ DetailsView()
+                    })
+                    .onTapGesture {
+                        show.toggle()
+                    }
+            }
+        }
     }
 }
