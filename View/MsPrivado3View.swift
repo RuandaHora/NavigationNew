@@ -34,7 +34,7 @@ struct MsPrivado3: View {
             
             VStack{
                 HStack{
-                    Text("        ")
+                    Text("            ")
                     NavigationLink (destination: Accont3View()) {
                         Image("Image 3")
                             .resizable()
@@ -47,7 +47,7 @@ struct MsPrivado3: View {
                             .foregroundColor(.white)
                         
                         Spacer()
-                    }
+                    }.padding(8)
                 }
                 Spacer()
                 HStack {
