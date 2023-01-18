@@ -42,11 +42,11 @@ struct Cards2View: View {
                     .blendMode(.overlay)
             }
             .padding(.all)
-            .frame(width: 180, height: 230)
+            .frame(width: 179, height: 230)
             .foregroundColor(.white)
             .background(Image("Laranja"))
             .cornerRadius(30)
-            .padding(11.5)
+            .padding(8)
     }
 }
 

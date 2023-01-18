@@ -36,11 +36,11 @@ struct CardsView: View {
                     .blendMode(.overlay)
             }
             .padding(.all)
-            .frame(width: 180, height: 230)
+            .frame(width: 176, height: 230)
             .foregroundColor(.white)
             .background(Image("BackGround"))
         .cornerRadius(30)
-        .padding(11.5)
+        .padding(8)
     }
 }
 
