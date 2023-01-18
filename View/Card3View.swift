@@ -45,7 +45,7 @@ struct Cards3View: View {
             .foregroundColor(.white)
             .background(Image("Card3"))
             .cornerRadius(30)
-            .padding(8)
+            .padding(11.5)
     }
 }
 

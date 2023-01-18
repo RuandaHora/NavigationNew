@@ -40,7 +40,7 @@ struct CardsView: View {
             .foregroundColor(.white)
             .background(Image("BackGround"))
         .cornerRadius(30)
-        .padding(8)
+        .padding(11.5)
     }
 }
 
