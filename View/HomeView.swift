@@ -33,7 +33,7 @@ struct HomeView: View {
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(0 ..< 1) { item in
-                                    Card3ViewOpen()
+                                    Cards3View()
                                     CardsViewOpen()
                                     Card2ViewOpen()
                                 }
