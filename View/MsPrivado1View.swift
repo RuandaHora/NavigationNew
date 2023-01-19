@@ -32,7 +32,6 @@ struct MsPrivado1: View {
             
             VStack{
                 HStack{
-                    Text("            ")
                     NavigationLink (destination: AccontView()) {
                         Image("Image 2")
                             .resizable()
