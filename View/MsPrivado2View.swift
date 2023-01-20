@@ -56,12 +56,23 @@ struct MsPrivado2: View {
                     
                         .overlay(
                             HStack{
-                                
+                                Image(systemName: "plus" )
+                                    .foregroundColor(.blue)
+                                    .font(.title)
                                 TextField("  Digite", text: self.$search)
                                     .frame(width: 250, height: 40)
                                     .foregroundColor(.primary)
                                     .background(.ultraThinMaterial)
                                     .cornerRadius(20)
+                                Image(systemName: "brazilianrealsign.circle" )
+                                    .foregroundColor(.blue)
+                                    .font(.title)
+                                Image(systemName: "camera" )
+                                    .foregroundColor(.blue)
+                                    .font(.title)
+                                Image(systemName: "mic" )
+                                    .foregroundColor(.blue)
+                                    .font(.title)
                                 
                             }
                         )
