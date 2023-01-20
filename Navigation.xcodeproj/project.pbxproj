@@ -30,6 +30,7 @@
 		886D77842973121F005EB726 /* Mensages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D77832973121F005EB726 /* Mensages.swift */; };
 		886D7786297389B2005EB726 /* RedesSociais.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D7785297389B2005EB726 /* RedesSociais.swift */; };
 		886D778829738F16005EB726 /* Objetivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D778729738F16005EB726 /* Objetivo.swift */; };
+		8898CE2B297A2C18004D9862 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898CE2A297A2C18004D9862 /* Camera.swift */; };
 		88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE0CB62970D8CE00DF460D /* CardView.swift */; };
 		88E139A82974F7CC00AE723B /* MsPrivado1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E139A72974F7CC00AE723B /* MsPrivado1View.swift */; };
 		88F67487297656EB001C4E8C /* MsPrivado2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F67486297656EB001C4E8C /* MsPrivado2View.swift */; };
@@ -66,6 +67,7 @@
 		886D77832973121F005EB726 /* Mensages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensages.swift; sourceTree = "<group>"; };
 		886D7785297389B2005EB726 /* RedesSociais.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedesSociais.swift; sourceTree = "<group>"; };
 		886D778729738F16005EB726 /* Objetivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objetivo.swift; sourceTree = "<group>"; };
+		8898CE2A297A2C18004D9862 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		88CE0CB62970D8CE00DF460D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		88E139A72974F7CC00AE723B /* MsPrivado1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado1View.swift; sourceTree = "<group>"; };
 		88F67486297656EB001C4E8C /* MsPrivado2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado2View.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				886D778729738F16005EB726 /* Objetivo.swift */,
 				88F6748E29773553001C4E8C /* Perfil2.swift */,
 				88F6749029773562001C4E8C /* Perfil3.swift */,
+				8898CE2A297A2C18004D9862 /* Camera.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				88451CDE296E2F6D00EA98A8 /* NavigationBar.swift in Sources */,
 				886D7780297235A2005EB726 /* Foto4.swift in Sources */,
 				88F67489297656FE001C4E8C /* MsPrivado3View.swift in Sources */,
+				8898CE2B297A2C18004D9862 /* Camera.swift in Sources */,
 				886D778829738F16005EB726 /* Objetivo.swift in Sources */,
 				88451CF3296FA07800EA98A8 /* CourseView.swift in Sources */,
 				88F6748D29773408001C4E8C /* Accont3View.swift in Sources */,

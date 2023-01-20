@@ -73,7 +73,7 @@ struct MsPrivado1: View {
                                         .font(.title2)
                                 }
                                 Text("")
-                                Button(action: {}){
+                                NavigationLink (destination: Camera()){
                                     Image(systemName: "camera" )
                                         .foregroundColor(.blue)
                                         .font(.title2)
@@ -86,7 +86,11 @@ struct MsPrivado1: View {
                                     Text("")
                                 }
                             }
-                    )
+                        )
+                    
+                }
+                .onTapGesture {
+                        show.toggle()
                 }
             }
         }
