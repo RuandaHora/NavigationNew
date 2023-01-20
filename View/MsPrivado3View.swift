@@ -85,7 +85,7 @@ struct MsPrivado3: View {
                                     Image(systemName: "mic" )
                                         .foregroundColor(.blue)
                                         .font(.title2)
-                                    Text(" ")
+                                    Text("")
                                 }
                             }
                         )
