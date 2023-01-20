@@ -21,6 +21,13 @@ struct HomeView: View {
                         HStack {
                                 Mensages()
                         }
+                        
+                        HStack {
+                            Text("Recent Item")
+                                .font(.title2.bold())
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding()
+                        }
                         ScrollView(.horizontal, showsIndicators: false){
                             HStack {
                                 ForEach(0 ..< 1) { item in
