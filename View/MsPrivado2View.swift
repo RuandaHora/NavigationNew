@@ -56,6 +56,7 @@ struct MsPrivado2: View {
                     
                         .overlay(
                             HStack{
+                                Divider()
                                 Image(systemName: "plus" )
                                     .foregroundColor(.blue)
                                     .font(.title)
@@ -66,14 +67,16 @@ struct MsPrivado2: View {
                                     .cornerRadius(20)
                                 Image(systemName: "brazilianrealsign.circle" )
                                     .foregroundColor(.blue)
-                                    .font(.title)
+                                    .font(.title2)
+                                Divider()
                                 Image(systemName: "camera" )
                                     .foregroundColor(.blue)
-                                    .font(.title)
+                                    .font(.title2)
+                                Divider()
                                 Image(systemName: "mic" )
                                     .foregroundColor(.blue)
-                                    .font(.title)
-                                
+                                    .font(.title2)
+                                Divider()
                             }
                         )
                 }
