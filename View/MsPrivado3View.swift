@@ -75,7 +75,7 @@ struct MsPrivado3: View {
                                         .font(.title2)
                                 }
                                 Text("")
-                                Button(action: {Camera()}){
+                                NavigationLink(destination: Camera()){
                                     Image(systemName: "camera" )
                                         .foregroundColor(.blue)
                                         .font(.title2)
