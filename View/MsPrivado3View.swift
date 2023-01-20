@@ -58,27 +58,35 @@ struct MsPrivado3: View {
                         .overlay(
                             HStack{
                                 Text("")
-                                Image(systemName: "plus" )
-                                    .foregroundColor(.blue)
-                                    .font(.title)
+                                Button(action: {}){
+                                    Image(systemName: "plus" )
+                                        .foregroundColor(.blue)
+                                        .font(.title)
+                                }
                                 TextField("  Digite", text: self.$search)
                                     .frame(width: 220, height: 30)
                                     .foregroundColor(.primary)
                                     .background(.ultraThinMaterial)
                                     .cornerRadius(20)
                                 Text("")
-                                Image(systemName: "brazilianrealsign.circle" )
-                                    .foregroundColor(.blue)
-                                    .font(.title2)
+                                Button(action: {}){
+                                    Image(systemName: "brazilianrealsign.circle" )
+                                        .foregroundColor(.blue)
+                                        .font(.title2)
+                                }
                                 Text("")
-                                Image(systemName: "camera" )
-                                    .foregroundColor(.blue)
-                                    .font(.title2)
+                                Button(action: {}){
+                                    Image(systemName: "camera" )
+                                        .foregroundColor(.blue)
+                                        .font(.title2)
+                                }
                                 Text("")
-                                Image(systemName: "mic" )
-                                    .foregroundColor(.blue)
-                                    .font(.title2)
-                                Text("")
+                                Button(action: {}){
+                                    Image(systemName: "mic" )
+                                        .foregroundColor(.blue)
+                                        .font(.title2)
+                                    Text("")
+                                }
                             }
                         )
                 }
