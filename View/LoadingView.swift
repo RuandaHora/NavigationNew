@@ -1,16 +1,17 @@
-//
-//  LoadingView.swift
-//  Navigation
-//
-//  Created by Marcelo Hora on 22/01/23.
-//
-
 import SwiftUI
 
 struct LoadingView: View {
     var body: some View {
-        ProgressView("Loading...")
-            .progressViewStyle(.linear)
+        ZStack {
+            VStack{
+                Image("Logo")
+                    .resizable()
+                    .frame(width: 100,height: 100)
+                    .cornerRadius(35)
+                Text("Navigation")
+                    .font(.title2.bold())
+            }
+        }
     }
 }
 
