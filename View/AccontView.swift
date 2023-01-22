@@ -50,8 +50,10 @@ struct AccontView: View {
                     HStack {
                         RedesSociaiss()
                     }
-                    
+                    }
                 }
+            .refreshable {
+                print("[CARREGANDO....]")
             }
         }
     }

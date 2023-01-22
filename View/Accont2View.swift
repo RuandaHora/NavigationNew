@@ -46,6 +46,9 @@ struct Accont2View: View {
                 .font(.headline)
                 
             }
+            .refreshable {
+                print("[CARREGANDO....]")
+            }
         }
     }
 }

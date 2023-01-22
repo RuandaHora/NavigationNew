@@ -44,6 +44,9 @@ struct Accont3View: View {
                 .cornerRadius(10)
                 .font(.headline)
             }
+            }
+        .refreshable {
+            print("[CARREGANDO....]")
         }
     }
 }
