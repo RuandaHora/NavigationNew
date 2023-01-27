@@ -68,13 +68,13 @@ struct MsPrivado3: View {
                                     .foregroundColor(.primary)
                                     .background(.ultraThinMaterial)
                                     .cornerRadius(20)
-                                Text(" ")
+                                Text("")
                                 Button(action: {}){
                                     Image(systemName: "brazilianrealsign.circle" )
                                         .foregroundColor(.blue)
                                         .font(.title2)
                                 }
-                                Text(" ")
+                                Text("")
                                 NavigationLink(destination: Camera()){
                                     Image(systemName: "camera" )
                                         .foregroundColor(.blue)
@@ -85,7 +85,7 @@ struct MsPrivado3: View {
                                     Image(systemName: "mic" )
                                         .foregroundColor(.blue)
                                         .font(.title2)
-                                    Text(" ")
+                                    Text("")
                                 }
                             }
                         )
