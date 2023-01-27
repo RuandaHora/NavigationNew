@@ -23,7 +23,7 @@ struct Loading2View: View {
                     .resizable()
                     .frame(width: 100,height: 100)
                     .cornerRadius(35)
-                Text("Ruan da Hora ")
+                Text("Ruan da Hora")
                     .font(.title2.bold())
             }
             .opacity(size)
