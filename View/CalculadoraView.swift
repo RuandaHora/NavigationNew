@@ -65,7 +65,7 @@ struct CalculadoraView: View {
                 Spacer()
                 HStack{
                     Text(values)
-                        .padding(.vertical, 20)
+                        .padding(20)
                         .lineLimit(1)
                         .font(.system(size: CGFloat(80/Int((Double(String(result).count + 10) / 8.0)))))
                         .foregroundColor(Color.white)
@@ -73,8 +73,8 @@ struct CalculadoraView: View {
                         .fixedSize(horizontal:true, vertical: false )
                 }
                     
-                VStack (spacing: 10){
-                    HStack (spacing: 20){
+                VStack (spacing: 1){
+                    HStack (spacing: 15){
                             
                         Button (action: { reset()}){
                             Text("AC")
@@ -109,7 +109,7 @@ struct CalculadoraView: View {
                             }
                     }.foregroundColor(Color.white)
                 }
-                HStack (spacing: 20){
+                HStack (spacing: 15){
                     
                     Button (action: {process(digit: 7)}){
                         Text("7")
@@ -142,7 +142,7 @@ struct CalculadoraView: View {
                         }
                     
                 }.foregroundColor(Color.white)
-                HStack (spacing: 20){
+                HStack (spacing: 15){
                     
                     Button (action: {process(digit: 4)}){
                         Text("4")
@@ -174,7 +174,7 @@ struct CalculadoraView: View {
                         }
                     
                 }.foregroundColor(Color.white)
-                HStack (spacing: 20){
+                HStack (spacing: 15){
                     Button (action: {process(digit: 1)}){
                         Text("1")
                             .frame(width: 90, height: 90)
