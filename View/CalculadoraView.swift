@@ -78,6 +78,8 @@ struct CalculadoraView: View {
                             
                         Button (action: { reset()}){
                             Text("AC")
+                                .font(.title2.bold())
+                                .foregroundColor(.white)
                                 .frame(width: 90, height: 90)
                                 .background(Color.gray)
                                 .cornerRadius(200.0)
@@ -86,6 +88,8 @@ struct CalculadoraView: View {
                             calculate()
                             operation=6}){
                                 Text("+/-")
+                                .font(.title2.bold())
+                                .foregroundColor(.white)
                                 .frame(width: 90, height: 90)
                                 .background(Color.gray)
                                 .cornerRadius(200.0)
@@ -94,6 +98,8 @@ struct CalculadoraView: View {
                             calculate()
                             operation=5}){
                                 Image(systemName: "percent")
+                                    .font(.title2.bold())
+                                    .foregroundColor(.white)
                                     .frame(width: 90, height: 90)
                                     .background(Color.gray)
                                     .cornerRadius(200.0)
@@ -113,12 +119,16 @@ struct CalculadoraView: View {
                     
                     Button (action: {process(digit: 7)}){
                         Text("7")
+                            .font(.title2.bold())
+                            .foregroundColor(.white)
                             .frame(width: 90, height: 90)
                             .background(.ultraThinMaterial)
                             .cornerRadius(100)
                     }
                     Button (action: {process(digit: 8)}){
                         Text("8")
+                            .font(.title2.bold())
+                            .foregroundColor(.white)
                             .frame(width: 90, height: 90)
                             .background(.ultraThinMaterial)
                             .cornerRadius(100)
@@ -126,6 +136,8 @@ struct CalculadoraView: View {
                     
                     Button (action: {process(digit: 9)}){
                         Text("9")
+                            .font(.title2.bold())
+                            .foregroundColor(.white)
                         .frame(width: 90, height: 90)
                         .background(.ultraThinMaterial)
                         .cornerRadius(100)
@@ -135,7 +147,7 @@ struct CalculadoraView: View {
                         operation = 3}){
                             Image(systemName: "multiply")
                                 .foregroundColor(.white)
-                                .font(.title2)
+                                .font(.title.bold())
                                 .frame(width: 90, height: 90)
                                 .background(Color.orange)
                                 .cornerRadius(400.0)
@@ -146,6 +158,8 @@ struct CalculadoraView: View {
                     
                     Button (action: {process(digit: 4)}){
                         Text("4")
+                            .font(.title2.bold())
+                            .foregroundColor(.white)
                             .frame(width: 90, height: 90)
                             .background(.ultraThinMaterial)
                             .cornerRadius(100)
@@ -153,6 +167,8 @@ struct CalculadoraView: View {
                     
                     Button (action: {process(digit: 5)}){
                         Text("5")
+                            .font(.title2.bold())
+                            .foregroundColor(.white)
                             .frame(width: 90, height: 90)
                             .background(.ultraThinMaterial)
                             .cornerRadius(100)
@@ -160,6 +176,8 @@ struct CalculadoraView: View {
                     
                     Button (action: {process(digit: 6)}){
                         Text("6")
+                            .font(.title2.bold())
+                            .foregroundColor(.white)
                             .frame(width: 90, height: 90)
                             .background(.ultraThinMaterial)
                             .cornerRadius(100)
@@ -169,7 +187,7 @@ struct CalculadoraView: View {
                             Image(systemName: "minus")
                                 .frame(width: 90, height: 90)
                                 .background(Color.orange)
-                                .font(.largeTitle)
+                                .font(.title.bold())
                                 .cornerRadius(200.0)
                         }
                     
@@ -177,18 +195,24 @@ struct CalculadoraView: View {
                 HStack (spacing: 15){
                     Button (action: {process(digit: 1)}){
                         Text("1")
+                            .font(.title2.bold())
+                            .foregroundColor(.white)
                             .frame(width: 90, height: 90)
                             .background(.ultraThinMaterial)
                             .cornerRadius(100)
                     }
                     Button (action: {process(digit: 2)}){
                         Text("2")
+                            .font(.title2.bold())
+                            .foregroundColor(.white)
                             .frame(width: 90, height: 90)
                             .background(.ultraThinMaterial)
                             .cornerRadius(100)
                     }
                     Button (action: {process(digit: 3)}){
                         Text("3")
+                            .font(.title2.bold())
+                            .foregroundColor(.white)
                             .frame(width: 90, height: 90)
                             .background(.ultraThinMaterial)
                             .cornerRadius(100)
@@ -207,6 +231,8 @@ struct CalculadoraView: View {
                     HStack (spacing: 1){
                         Button (action: { process(digit: 0)}){
                             Text("0")
+                                .font(.title2.bold())
+                                .foregroundColor(.white)
                                 .frame(maxWidth: .infinity, maxHeight: 80)
                                 .background(.ultraThinMaterial)
                                 .cornerRadius(100)
@@ -216,6 +242,8 @@ struct CalculadoraView: View {
                             decimal = 10.0
                             values = values + "."}}){
                             Text(",")
+                                .font(.title2.bold())
+                                .foregroundColor(.white)
                                 .frame(width: 90, height: 90)
                                 .background(.ultraThinMaterial)
                                 .cornerRadius(100)
