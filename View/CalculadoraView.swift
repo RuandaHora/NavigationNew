@@ -228,11 +228,10 @@ struct CalculadoraView: View {
                 }.foregroundColor(Color.white)
                 
                 GeometryReader { geometry in
-                    HStack (spacing: 10){
-                        Text(" ")
+                    HStack (spacing: 12){
                         Button (action: { process(digit: 0)}){
                             Text("0")
-                            Text("       ")
+                            Text("         ")
                         }.font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 185, height: 90)
