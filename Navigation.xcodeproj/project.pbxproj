@@ -36,6 +36,8 @@
 		88D7D191298047ED00DE7F17 /* Loading2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D190298047ED00DE7F17 /* Loading2View.swift */; };
 		88D7D1932984C02200DE7F17 /* CalculadoraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D1922984C02200DE7F17 /* CalculadoraView.swift */; };
 		88D7D1952984C08700DE7F17 /* CardCalculadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D1942984C08700DE7F17 /* CardCalculadora.swift */; };
+		88D7D1992985445F00DE7F17 /* CardBin2Dec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D1982985445E00DE7F17 /* CardBin2Dec.swift */; };
+		88D7D19B2985448700DE7F17 /* Bin2DecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D19A2985448700DE7F17 /* Bin2DecView.swift */; };
 		88E139A82974F7CC00AE723B /* MsPrivado1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E139A72974F7CC00AE723B /* MsPrivado1View.swift */; };
 		88F67487297656EB001C4E8C /* MsPrivado2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F67486297656EB001C4E8C /* MsPrivado2View.swift */; };
 		88F67489297656FE001C4E8C /* MsPrivado3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F67488297656FE001C4E8C /* MsPrivado3View.swift */; };
@@ -77,6 +79,8 @@
 		88D7D190298047ED00DE7F17 /* Loading2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading2View.swift; sourceTree = "<group>"; };
 		88D7D1922984C02200DE7F17 /* CalculadoraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraView.swift; sourceTree = "<group>"; };
 		88D7D1942984C08700DE7F17 /* CardCalculadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCalculadora.swift; sourceTree = "<group>"; };
+		88D7D1982985445E00DE7F17 /* CardBin2Dec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBin2Dec.swift; sourceTree = "<group>"; };
+		88D7D19A2985448700DE7F17 /* Bin2DecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bin2DecView.swift; sourceTree = "<group>"; };
 		88E139A72974F7CC00AE723B /* MsPrivado1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado1View.swift; sourceTree = "<group>"; };
 		88F67486297656EB001C4E8C /* MsPrivado2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado2View.swift; sourceTree = "<group>"; };
 		88F67488297656FE001C4E8C /* MsPrivado3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado3View.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				88F6748A297733EC001C4E8C /* Accont2View.swift */,
 				88F6748C29773408001C4E8C /* Accont3View.swift */,
 				88D7D1922984C02200DE7F17 /* CalculadoraView.swift */,
+				88D7D19A2985448700DE7F17 /* Bin2DecView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				88F6749029773562001C4E8C /* Perfil3.swift */,
 				8898CE2A297A2C18004D9862 /* Camera.swift */,
 				88D7D1942984C08700DE7F17 /* CardCalculadora.swift */,
+				88D7D1982985445E00DE7F17 /* CardBin2Dec.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				886D777C297232AB005EB726 /* Foto 2.swift in Sources */,
 				88451CEB296F8BB900EA98A8 /* HomeView.swift in Sources */,
 				886D7786297389B2005EB726 /* RedesSociais.swift in Sources */,
+				88D7D1992985445F00DE7F17 /* CardBin2Dec.swift in Sources */,
 				8807D868297DC19A00CE5702 /* LoadingView.swift in Sources */,
 				88F6748B297733EC001C4E8C /* Accont2View.swift in Sources */,
 				88F6749129773562001C4E8C /* Perfil3.swift in Sources */,
@@ -284,6 +291,7 @@
 				886D778229730C1F005EB726 /* OpenMensages.swift in Sources */,
 				886D777829720EE9005EB726 /* Details3View.swift in Sources */,
 				886D777E297232B5005EB726 /* Foto3.swift in Sources */,
+				88D7D19B2985448700DE7F17 /* Bin2DecView.swift in Sources */,
 				886D77702971B56C005EB726 /* DetailsView.swift in Sources */,
 				88451CDE296E2F6D00EA98A8 /* NavigationBar.swift in Sources */,
 				886D7780297235A2005EB726 /* Foto4.swift in Sources */,

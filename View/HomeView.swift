@@ -51,6 +51,9 @@ struct HomeView: View {
                                 
                                     CardCalculadora()
                             }
+                            HStack{
+                                CardBin2Dec()
+                            }
                         }
                     }
                 }

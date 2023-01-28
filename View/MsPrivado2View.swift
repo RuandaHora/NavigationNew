@@ -62,7 +62,8 @@ struct MsPrivado2: View {
                                         .foregroundColor(.blue)
                                         .font(.title)
                                 }
-                                TextField("  Digite", text: self.$search)
+                                TextField("Digite", text: self.$search)
+                                    .padding(15)
                                     .frame(width: 220, height: 30)
                                     .foregroundColor(.primary)
                                     .background(.ultraThinMaterial)
