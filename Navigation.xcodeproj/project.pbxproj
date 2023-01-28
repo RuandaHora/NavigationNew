@@ -34,6 +34,8 @@
 		8898CE2B297A2C18004D9862 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8898CE2A297A2C18004D9862 /* Camera.swift */; };
 		88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE0CB62970D8CE00DF460D /* CardView.swift */; };
 		88D7D191298047ED00DE7F17 /* Loading2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D190298047ED00DE7F17 /* Loading2View.swift */; };
+		88D7D1932984C02200DE7F17 /* CalculadoraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D1922984C02200DE7F17 /* CalculadoraView.swift */; };
+		88D7D1952984C08700DE7F17 /* CardCalculadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D1942984C08700DE7F17 /* CardCalculadora.swift */; };
 		88E139A82974F7CC00AE723B /* MsPrivado1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E139A72974F7CC00AE723B /* MsPrivado1View.swift */; };
 		88F67487297656EB001C4E8C /* MsPrivado2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F67486297656EB001C4E8C /* MsPrivado2View.swift */; };
 		88F67489297656FE001C4E8C /* MsPrivado3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F67488297656FE001C4E8C /* MsPrivado3View.swift */; };
@@ -73,6 +75,8 @@
 		8898CE2A297A2C18004D9862 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		88CE0CB62970D8CE00DF460D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		88D7D190298047ED00DE7F17 /* Loading2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading2View.swift; sourceTree = "<group>"; };
+		88D7D1922984C02200DE7F17 /* CalculadoraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraView.swift; sourceTree = "<group>"; };
+		88D7D1942984C08700DE7F17 /* CardCalculadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCalculadora.swift; sourceTree = "<group>"; };
 		88E139A72974F7CC00AE723B /* MsPrivado1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado1View.swift; sourceTree = "<group>"; };
 		88F67486297656EB001C4E8C /* MsPrivado2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado2View.swift; sourceTree = "<group>"; };
 		88F67488297656FE001C4E8C /* MsPrivado3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsPrivado3View.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				88F67488297656FE001C4E8C /* MsPrivado3View.swift */,
 				88F6748A297733EC001C4E8C /* Accont2View.swift */,
 				88F6748C29773408001C4E8C /* Accont3View.swift */,
+				88D7D1922984C02200DE7F17 /* CalculadoraView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				88F6748E29773553001C4E8C /* Perfil2.swift */,
 				88F6749029773562001C4E8C /* Perfil3.swift */,
 				8898CE2A297A2C18004D9862 /* Camera.swift */,
+				88D7D1942984C08700DE7F17 /* CardCalculadora.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -271,8 +277,10 @@
 				88CE0CB72970D8CE00DF460D /* CardView.swift in Sources */,
 				88F67487297656EB001C4E8C /* MsPrivado2View.swift in Sources */,
 				886D777629720EC5005EB726 /* Card3View.swift in Sources */,
+				88D7D1952984C08700DE7F17 /* CardCalculadora.swift in Sources */,
 				886D77722971BD08005EB726 /* Card2View.swift in Sources */,
 				88451CE0296E5D3000EA98A8 /* GeneralView.swift in Sources */,
+				88D7D1932984C02200DE7F17 /* CalculadoraView.swift in Sources */,
 				886D778229730C1F005EB726 /* OpenMensages.swift in Sources */,
 				886D777829720EE9005EB726 /* Details3View.swift in Sources */,
 				886D777E297232B5005EB726 /* Foto3.swift in Sources */,
