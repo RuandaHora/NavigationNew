@@ -75,44 +75,40 @@ struct CalculadoraView: View {
                     
                 HStack (spacing: 1){
                         
-                    Button("AC") {
-                            reset()
+                    Button (action: { reset()}){
+                        Text("AC")
+                            .padding(.vertical, 40)
+                            .frame(maxWidth: .infinity)
+                            .background(Color.gray)
+                            .cornerRadius(200.0)
+                    }
+                    Button (action: {result = result * -1
+                        calculate()
+                        operation=6}){
+                            Text("+/-")
+                            .padding(.vertical, 40)
+                            .frame(maxWidth: .infinity)
+                            .background(Color.gray)
+                            .cornerRadius(200.0)
                         }
-                        .padding(.vertical, 40)
-                        .frame(maxWidth: .infinity)
-                        .background(Color.gray)
-                        .cornerRadius(200.0)
-                        
-                        Button("+/-") {
-                            result = result * -1
-                            calculate()
-                            operation=6
+                    Button (action: { result=result / 100
+                        calculate()
+                        operation=5}){
+                            Text("%")
+                                .padding(.vertical, 40)
+                                .frame(maxWidth: .infinity)
+                                .background(Color.gray)
+                                .cornerRadius(200.0)
                         }
-                        .padding(.vertical, 40)
-                        .frame(maxWidth: .infinity)
-                        .background(Color.gray)
-                        .cornerRadius(200.0)
-                    
-                        Button("%") {
-                            result=result / 100
-                            calculate()
-                            operation=5
+                    Button (action: { calculate()
+                        operation=4}){
+                            Text("/")
+                                .font(.largeTitle)
+                                .padding(.vertical, 30)
+                                .frame(maxWidth: .infinity)
+                                .background(Color.orange)
+                                .cornerRadius(200.0)
                         }
-                        .padding(.vertical, 40)
-                        .frame(maxWidth: .infinity)
-                        .background(Color.gray)
-                        .cornerRadius(200.0)
-                        
-                    Button("/") {
-                            calculate()
-                            operation=4
-                        }
-                        .font(.largeTitle)
-                        .padding(.vertical, 30)
-                        .frame(maxWidth: .infinity)
-                        .background(Color.orange)
-                        .cornerRadius(200.0)
-                    
                 }.foregroundColor(Color.white)
                 HStack (spacing: 1){
                     
@@ -204,17 +200,15 @@ struct CalculadoraView: View {
                     .padding(.vertical, 40)
                     .frame(maxWidth: .infinity)
                     
-                    
-                    Button("+") {
-                        calculate()
-                        operation = 1
-                    }
-                    .font(.largeTitle)
-                    .padding(.vertical, 30)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.orange)
-                    .cornerRadius(200.0)
-                    
+                    Button (action: {calculate()
+                        operation = 1}){
+                            Text("+")
+                                .font(.largeTitle)
+                                .padding(.vertical, 30)
+                                .frame(maxWidth: .infinity)
+                                .background(Color.orange)
+                                .cornerRadius(200.0)
+                        }
                 }.foregroundColor(Color.white)
                 GeometryReader { geometry in
                     HStack (spacing: 1){
@@ -235,18 +229,16 @@ struct CalculadoraView: View {
                         .padding(.vertical, 40)
                         .frame(maxWidth: .infinity)
                         
-                        
-                        Button("=") {
-                            calculate()
+                        Button (action: {calculate()
                             previousOperation=9999
-                            operation=9999
-                        }
-                        .font(.largeTitle)
-                        .padding(.vertical, 30)
-                        .frame(maxWidth: .infinity)
-                        .background(Color.orange)
-                        .cornerRadius(200.0)
-                    
+                            operation=9999}){
+                                Text("=")
+                                .font(.largeTitle)
+                                .padding(.vertical, 30)
+                                .frame(maxWidth: .infinity)
+                                .background(Color.orange)
+                                .cornerRadius(200.0)
+                            }
                     }.foregroundColor(Color.white)
                 }.frame(maxHeight: 80)
             }
