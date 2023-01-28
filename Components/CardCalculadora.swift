@@ -19,6 +19,10 @@ struct CardCalculadora: View {
                     Text("Calculator")
                         .font(.title2.bold())
                     Spacer()
+                    Image(systemName: "chevron.right")
+                        .resizable()
+                        .frame(width: 10, height: 20)
+                        .padding(10)
                     
                 }
             }.frame(width: 370,height: 50)

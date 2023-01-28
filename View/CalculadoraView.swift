@@ -65,9 +65,9 @@ struct CalculadoraView: View {
                 Spacer()
                 HStack{
                     Text(values)
-                        .padding(20)
+                        .padding(10)
                         .lineLimit(1)
-                        .font(.system(size: CGFloat(100/Int((Double(String(result).count + 10) / 8.0)))))
+                        .font(.system(size: CGFloat(80/Int((Double(String(result).count + 10) / 8.0)))))
                         .foregroundColor(Color.white)
                         .frame(maxWidth: .infinity)
                         .fixedSize(horizontal:true, vertical: false )
@@ -78,7 +78,7 @@ struct CalculadoraView: View {
                             
                         Button (action: { reset()}){
                             Text("AC")
-                                .font(.system(size: 35))
+                                .font(.system(size: 35).bold())
                                 .foregroundColor(.black)
                                 .frame(width: 90, height: 90)
                                 .background(Color.gray)
@@ -147,7 +147,7 @@ struct CalculadoraView: View {
                         operation = 3}){
                             Image(systemName: "multiply")
                                 .foregroundColor(.white)
-                                .font(.system(size: 35))
+                                .font(.system(size: 35).bold())
                                 .frame(width: 90, height: 90)
                                 .background(Color.orange)
                                 .cornerRadius(400.0)
