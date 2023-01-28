@@ -9,18 +9,20 @@ import SwiftUI
 
 struct CardCalculadora: View {
     var body: some View {
-        VStack (alignment: .trailing){
-            HStack{
-                Image(systemName: "plusminus.circle.fill")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-                Text("Calculator")
-                    .font(.title2.bold())
-                
-            }
-        }.frame(width: 370,height: 50)
-            .background(.ultraThinMaterial)
+        NavigationLink(destination: CalculadoraView()) {
+            VStack (alignment: .trailing){
+                HStack{
+                    Image(systemName: "plusminus.circle.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                    Text("Calculator")
+                        .font(.title2.bold())
+                    
+                }
+            }.frame(width: 370,height: 50)
+                .background(.ultraThinMaterial)
             .cornerRadius(30)
+        }
     }
 }
 

@@ -1,10 +1,3 @@
-//
-//  CalculadoraView.swift
-//  Navigation
-//
-//  Created by Marcelo Hora on 27/01/23.
-//
-
 import SwiftUI
 
 struct CalculadoraView: View {
@@ -261,7 +254,7 @@ struct CalculadoraView: View {
             .background(Color.black)
         }
         
-        struct CalculatorView_Previews: PreviewProvider {
+        struct CalculadoraView_Previews: PreviewProvider {
             static var previews: some View {
                 CalculadoraView()
             }
