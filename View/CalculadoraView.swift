@@ -73,146 +73,144 @@ struct CalculadoraView: View {
                         .fixedSize(horizontal:true, vertical: false )
                 }
                     
-                HStack (spacing: 1){
-                        
-                    Button (action: { reset()}){
-                        Text("AC")
-                            .padding(.vertical, 40)
-                            .frame(maxWidth: .infinity)
-                            .background(Color.gray)
-                            .cornerRadius(200.0)
-                    }
-                    Button (action: {result = result * -1
-                        calculate()
-                        operation=6}){
-                            Text("+/-")
-                            .padding(.vertical, 40)
-                            .frame(maxWidth: .infinity)
-                            .background(Color.gray)
-                            .cornerRadius(200.0)
-                        }
-                    Button (action: { result=result / 100
-                        calculate()
-                        operation=5}){
-                            Text("%")
-                                .padding(.vertical, 40)
-                                .frame(maxWidth: .infinity)
+                VStack (spacing: 1){
+                    HStack (spacing: 23){
+                            
+                        Button (action: { reset()}){
+                            Text("AC")
+                                .frame(width: 90, height: 90)
                                 .background(Color.gray)
                                 .cornerRadius(200.0)
                         }
-                    Button (action: { calculate()
-                        operation=4}){
-                            Text("/")
-                                .font(.largeTitle)
-                                .padding(.vertical, 30)
-                                .frame(maxWidth: .infinity)
-                                .background(Color.orange)
+                        Button (action: {result = result * -1
+                            calculate()
+                            operation=6}){
+                                Text("+/-")
+                                .frame(width: 90, height: 90)
+                                .background(Color.gray)
                                 .cornerRadius(200.0)
-                        }
-                }.foregroundColor(Color.white)
-                HStack (spacing: 1){
+                            }
+                        Button (action: { result=result / 100
+                            calculate()
+                            operation=5}){
+                                Image(systemName: "percent")
+                                    .frame(width: 90, height: 90)
+                                    .background(Color.gray)
+                                    .cornerRadius(200.0)
+                            }
+                        Button (action: { calculate()
+                            operation=4}){
+                                Image(systemName: "divide")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .frame(width: 90, height: 90)
+                                    .background(Color.orange)
+                                    .cornerRadius(200.0)
+                            }
+                    }.foregroundColor(Color.white)
+                }
+                HStack (spacing: 23){
                     
                     Button("7") {
                         process(digit: 7)
                     }
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
-                    
+                    .frame(width: 90, height: 90)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(100)
                     
                     Button("8") {
                         process(digit: 8)
                     }
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
-                    
+                    .frame(width: 90, height: 90)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(100)
                     
                     Button("9") {
                         process(digit: 9)
                     }
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
-                    
+                    .frame(width: 90, height: 90)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(100)
                     Button (action: {calculate()
                         operation = 3}){
-                            Text("X")
+                            Image(systemName: "multiply")
+                                .foregroundColor(.white)
                                 .font(.title2)
-                                .padding(.vertical, 40)
-                                .frame(maxWidth: .infinity)
+                                .frame(width: 90, height: 90)
                                 .background(Color.orange)
                                 .cornerRadius(400.0)
                         }
                     
                 }.foregroundColor(Color.white)
-                HStack (spacing: 1){
+                HStack (spacing: 23){
                     
                     Button("4") {
                         process(digit: 4)
                     }
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
-                    
+                    .frame(width: 90, height: 90)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(100)
                     
                     Button("5") {
                         process(digit: 5)
                     }
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
-                    
-                    
+                    .frame(width: 90, height: 90)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(100)
                     Button("6") {
                         process(digit: 6)
                     }
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
-                    
+                    .frame(width: 90, height: 90)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(100)
                     Button (action: {calculate()
                         operation = 2}){
-                            Text("-")
-                                .padding(.vertical, 30)
-                                .frame(maxWidth: .infinity)
+                            Image(systemName: "minus")
+                                .frame(width: 90, height: 90)
                                 .background(Color.orange)
                                 .font(.largeTitle)
                                 .cornerRadius(200.0)
                         }
                     
                 }.foregroundColor(Color.white)
-                HStack (spacing: 1){
+                HStack (spacing: 23){
                     
                     Button("1") {
                         process(digit: 1)
                     }
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
-                    
-                    
+                    .frame(width: 90, height: 90)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(100)
                     Button("2") {
                         process(digit: 2)
                     }
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
-                    
-                    
+                    .frame(width: 90, height: 90)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(100)
                     Button("3") {
                         process(digit: 3)
                     }
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
+                    .frame(width: 90, height: 90)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(100)
                     
                     Button (action: {calculate()
                         operation = 1}){
-                            Text("+")
+                            Image(systemName: "plus")
                                 .font(.largeTitle)
-                                .padding(.vertical, 30)
-                                .frame(maxWidth: .infinity)
+                                .frame(width: 90, height: 90)
                                 .background(Color.orange)
                                 .cornerRadius(200.0)
                         }
                 }.foregroundColor(Color.white)
+                
                 GeometryReader { geometry in
                     HStack (spacing: 1){
                         Button (action: { process(digit: 0)}){
                             Text("0")
-                            .padding(.vertical, 40)
+                                .frame(maxWidth: .infinity, maxHeight: 80)
+                                .background(.ultraThinMaterial)
+                                .cornerRadius(100)
                             .frame(minWidth: geometry.size.width/2)
                         }
                         
@@ -222,24 +220,25 @@ struct CalculadoraView: View {
                                 values = values + "."
                             }
                         }
-                        .padding(.vertical, 40)
-                        .frame(maxWidth: .infinity)
+                        .frame(width: 90, height: 90)
+                        .background(.ultraThinMaterial)
+                        .cornerRadius(100)
                         
                         Button (action: {calculate()
                             previousOperation=9999
                             operation=9999}){
-                                Text("=")
+                                Image(systemName: "equal")
                                 .font(.largeTitle)
-                                .padding(.vertical, 30)
-                                .frame(maxWidth: .infinity)
+                                .frame(width: 90, height: 90)
                                 .background(Color.orange)
                                 .cornerRadius(200.0)
                             }
                     }.foregroundColor(Color.white)
-                }.frame(maxHeight: 80)
+                }.frame(maxHeight: 100)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.black)
+            
         }
         
         struct CalculadoraView_Previews: PreviewProvider {
