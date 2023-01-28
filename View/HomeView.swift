@@ -46,6 +46,12 @@ struct HomeView: View {
                                 }
                             }
                         }
+                        ScrollView (.horizontal, showsIndicators: false) {
+                            HStack {
+                                
+                                    CardCalculadora()
+                            }
+                        }
                     }
                 }
                 .navigationTitle("Featured")

@@ -22,6 +22,7 @@ struct CardCalculadora: View {
             }.frame(width: 370,height: 50)
                 .background(.ultraThinMaterial)
             .cornerRadius(30)
+            .padding(20)
         }
     }
 }
