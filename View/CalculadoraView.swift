@@ -212,17 +212,14 @@ struct CalculadoraView: View {
                                 .cornerRadius(100)
                             .frame(minWidth: geometry.size.width/2)
                         }
-                        
-                        Button(",") {
-                            if decimal == 0 {
-                                decimal = 10.0
-                                values = values + "."
-                            }
+                        Button (action: { if decimal == 0 {
+                            decimal = 10.0
+                            values = values + "."}}){
+                            Text(",")
+                                .frame(width: 90, height: 90)
+                                .background(.ultraThinMaterial)
+                                .cornerRadius(100)
                         }
-                        .frame(width: 90, height: 90)
-                        .background(.ultraThinMaterial)
-                        .cornerRadius(100)
-                        
                         Button (action: {calculate()
                             previousOperation=9999
                             operation=9999}){
