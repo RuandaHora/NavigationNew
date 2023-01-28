@@ -73,8 +73,8 @@ struct CalculadoraView: View {
                         .fixedSize(horizontal:true, vertical: false )
                 }
                     
-                VStack (spacing: 1){
-                    HStack (spacing: 23){
+                VStack (spacing: 10){
+                    HStack (spacing: 20){
                             
                         Button (action: { reset()}){
                             Text("AC")
@@ -109,28 +109,28 @@ struct CalculadoraView: View {
                             }
                     }.foregroundColor(Color.white)
                 }
-                HStack (spacing: 23){
+                HStack (spacing: 20){
                     
-                    Button("7") {
-                        process(digit: 7)
+                    Button (action: {process(digit: 7)}){
+                        Text("7")
+                            .frame(width: 90, height: 90)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(100)
                     }
-                    .frame(width: 90, height: 90)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(100)
+                    Button (action: {process(digit: 8)}){
+                        Text("8")
+                            .frame(width: 90, height: 90)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(100)
+                    }
                     
-                    Button("8") {
-                        process(digit: 8)
+                    Button (action: {process(digit: 9)}){
+                        Text("9")
+                        .frame(width: 90, height: 90)
+                        .background(.ultraThinMaterial)
+                        .cornerRadius(100)
                     }
-                    .frame(width: 90, height: 90)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(100)
                     
-                    Button("9") {
-                        process(digit: 9)
-                    }
-                    .frame(width: 90, height: 90)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(100)
                     Button (action: {calculate()
                         operation = 3}){
                             Image(systemName: "multiply")
@@ -142,27 +142,28 @@ struct CalculadoraView: View {
                         }
                     
                 }.foregroundColor(Color.white)
-                HStack (spacing: 23){
+                HStack (spacing: 20){
                     
-                    Button("4") {
-                        process(digit: 4)
+                    Button (action: {process(digit: 4)}){
+                        Text("4")
+                            .frame(width: 90, height: 90)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(100)
                     }
-                    .frame(width: 90, height: 90)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(100)
                     
-                    Button("5") {
-                        process(digit: 5)
+                    Button (action: {process(digit: 5)}){
+                        Text("5")
+                            .frame(width: 90, height: 90)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(100)
                     }
-                    .frame(width: 90, height: 90)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(100)
-                    Button("6") {
-                        process(digit: 6)
+                    
+                    Button (action: {process(digit: 6)}){
+                        Text("6")
+                            .frame(width: 90, height: 90)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(100)
                     }
-                    .frame(width: 90, height: 90)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(100)
                     Button (action: {calculate()
                         operation = 2}){
                             Image(systemName: "minus")
@@ -173,27 +174,25 @@ struct CalculadoraView: View {
                         }
                     
                 }.foregroundColor(Color.white)
-                HStack (spacing: 23){
-                    
-                    Button("1") {
-                        process(digit: 1)
+                HStack (spacing: 20){
+                    Button (action: {process(digit: 1)}){
+                        Text("1")
+                            .frame(width: 90, height: 90)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(100)
                     }
-                    .frame(width: 90, height: 90)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(100)
-                    Button("2") {
-                        process(digit: 2)
+                    Button (action: {process(digit: 2)}){
+                        Text("2")
+                            .frame(width: 90, height: 90)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(100)
                     }
-                    .frame(width: 90, height: 90)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(100)
-                    Button("3") {
-                        process(digit: 3)
+                    Button (action: {process(digit: 3)}){
+                        Text("3")
+                            .frame(width: 90, height: 90)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(100)
                     }
-                    .frame(width: 90, height: 90)
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(100)
-                    
                     Button (action: {calculate()
                         operation = 1}){
                             Image(systemName: "plus")
