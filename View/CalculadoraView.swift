@@ -132,16 +132,15 @@ struct CalculadoraView: View {
                     .padding(.vertical, 40)
                     .frame(maxWidth: .infinity)
                     
-                    
-                    Button("X") {
-                        calculate()
-                        operation=3
-                    }
-                    .font(.title2)
-                    .padding(.vertical, 40)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.orange)
-                    .cornerRadius(400.0)
+                    Button (action: {calculate()
+                        operation = 3}){
+                            Text("X")
+                                .font(.title2)
+                                .padding(.vertical, 40)
+                                .frame(maxWidth: .infinity)
+                                .background(Color.orange)
+                                .cornerRadius(400.0)
+                        }
                     
                 }.foregroundColor(Color.white)
                 HStack (spacing: 1){
@@ -166,16 +165,15 @@ struct CalculadoraView: View {
                     .padding(.vertical, 40)
                     .frame(maxWidth: .infinity)
                     
-                    
-                    Button("-") {
-                        calculate()
-                        operation=2
-                    }
-                    .padding(.vertical, 30)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.orange)
-                    .font(.largeTitle)
-                    .cornerRadius(200.0)
+                    Button (action: {calculate()
+                        operation = 2}){
+                            Text("-")
+                                .padding(.vertical, 30)
+                                .frame(maxWidth: .infinity)
+                                .background(Color.orange)
+                                .font(.largeTitle)
+                                .cornerRadius(200.0)
+                        }
                     
                 }.foregroundColor(Color.white)
                 HStack (spacing: 1){
@@ -212,13 +210,11 @@ struct CalculadoraView: View {
                 }.foregroundColor(Color.white)
                 GeometryReader { geometry in
                     HStack (spacing: 1){
-                        
-                        Button("0") {
-                            process(digit: 0)
+                        Button (action: { process(digit: 0)}){
+                            Text("0")
+                            .padding(.vertical, 40)
+                            .frame(minWidth: geometry.size.width/2)
                         }
-                        .padding(.vertical, 40)
-                        .frame(minWidth: geometry.size.width/2)
-                        
                         
                         Button(",") {
                             if decimal == 0 {
