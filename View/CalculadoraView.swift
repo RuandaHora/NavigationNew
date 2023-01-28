@@ -220,7 +220,7 @@ struct CalculadoraView: View {
                     Button (action: {calculate()
                         operation = 1}){
                             Image(systemName: "plus")
-                                .font(.largeTitle)
+                                .font(.title.bold())
                                 .frame(width: 90, height: 90)
                                 .background(Color.orange)
                                 .cornerRadius(200.0)
@@ -252,7 +252,7 @@ struct CalculadoraView: View {
                             previousOperation=9999
                             operation=9999}){
                                 Image(systemName: "equal")
-                                .font(.largeTitle)
+                                    .font(.title.bold())
                                 .frame(width: 90, height: 90)
                                 .background(Color.orange)
                                 .cornerRadius(200.0)
