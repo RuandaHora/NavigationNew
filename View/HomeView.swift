@@ -46,15 +46,16 @@ struct HomeView: View {
                                 }
                             }
                         }
-                        ScrollView (.horizontal, showsIndicators: false) {
                             HStack {
                                 
-                                    CardCalculadora()
+                                CardCalculadora()
                             }
                             HStack{
                                 CardBin2Dec()
                             }
-                        }
+                            HStack{
+                                CardDolar_Real()
+                            }
                     }
                 }
                 .navigationTitle("Featured")

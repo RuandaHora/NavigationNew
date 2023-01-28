@@ -10,19 +10,20 @@ import SwiftUI
 struct CardBin2Dec: View {
     var body: some View {
         NavigationLink(destination: Bin2DecView()) {
-            VStack (alignment: .trailing){
+            VStack {
                 HStack{
                     Image(systemName: "repeat.circle.fill")
                         .resizable()
                         .frame(width: 30, height: 30)
+                        .padding(10)
                     Text("Binário para Decimal")
                         .font(.title2.bold())
-                    
+                    Spacer()
                 }
             }.frame(width: 370,height: 50)
-                .background(.ultraThinMaterial)
+            .background(Image("BackGround"))
             .cornerRadius(30)
-            .padding(20)
+            .padding(5)
         }
     }
 }
