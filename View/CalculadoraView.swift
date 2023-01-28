@@ -228,16 +228,18 @@ struct CalculadoraView: View {
                 }.foregroundColor(Color.white)
                 
                 GeometryReader { geometry in
-                    HStack (spacing: 1){
+                    HStack (spacing: 10){
+                        Text(" ")
                         Button (action: { process(digit: 0)}){
                             Text("0")
-                                .font(.system(size: 45))
-                                .foregroundColor(.white)
-                                .frame(maxWidth: .infinity, maxHeight: 80)
-                                .background(.ultraThinMaterial)
-                                .cornerRadius(100)
-                            .frame(minWidth: geometry.size.width/2)
-                        }
+                            Text("       ")
+                        }.font(.system(size: 45))
+                            .foregroundColor(.white)
+                            .frame(width: 185, height: 90)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(100)
+                        .frame(minWidth: geometry.size.width/2)
+                        
                         Button (action: { if decimal == 0 {
                             decimal = 10.0
                             values = values + "."}}){
@@ -258,7 +260,7 @@ struct CalculadoraView: View {
                                 .cornerRadius(200.0)
                             }
                     }.foregroundColor(Color.white)
-                }.frame(maxHeight: 100)
+                }.frame(maxHeight: 120)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.black)
