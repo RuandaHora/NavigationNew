@@ -50,7 +50,7 @@ struct HomeView: View {
                             }
                         }
                         HStack {
-                            Text("Conversores ")
+                            Text("Converters")
                                 .font(.title2.bold())
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.all)
