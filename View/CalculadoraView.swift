@@ -122,7 +122,7 @@ struct CalculadoraView: View {
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 90, height: 90)
-                            .background(.ultraThinMaterial)
+                            .background(Color("Botão1"))
                             .cornerRadius(100)
                     }
                     Button (action: {process(digit: 8)}){
@@ -130,7 +130,7 @@ struct CalculadoraView: View {
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 90, height: 90)
-                            .background(.ultraThinMaterial)
+                            .background(Color("Botão1"))
                             .cornerRadius(100)
                     }
                     
@@ -139,7 +139,7 @@ struct CalculadoraView: View {
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                         .frame(width: 90, height: 90)
-                        .background(.ultraThinMaterial)
+                        .background(Color("Botão1"))
                         .cornerRadius(100)
                     }
                     
@@ -161,7 +161,7 @@ struct CalculadoraView: View {
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 90, height: 90)
-                            .background(.ultraThinMaterial)
+                            .background(Color("Botão1"))
                             .cornerRadius(100)
                     }
                     
@@ -170,7 +170,7 @@ struct CalculadoraView: View {
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 90, height: 90)
-                            .background(.ultraThinMaterial)
+                            .background(Color("Botão1"))
                             .cornerRadius(100)
                     }
                     
@@ -179,7 +179,7 @@ struct CalculadoraView: View {
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 90, height: 90)
-                            .background(.ultraThinMaterial)
+                            .background(Color("Botão1"))
                             .cornerRadius(100)
                     }
                     Button (action: {calculate()
@@ -198,7 +198,7 @@ struct CalculadoraView: View {
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 90, height: 90)
-                            .background(.ultraThinMaterial)
+                            .background(Color("Botão1"))
                             .cornerRadius(100)
                     }
                     Button (action: {process(digit: 2)}){
@@ -206,7 +206,7 @@ struct CalculadoraView: View {
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 90, height: 90)
-                            .background(.ultraThinMaterial)
+                            .background(Color("Botão1"))
                             .cornerRadius(100)
                     }
                     Button (action: {process(digit: 3)}){
@@ -214,7 +214,7 @@ struct CalculadoraView: View {
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 90, height: 90)
-                            .background(.ultraThinMaterial)
+                            .background(Color("Botão1"))
                             .cornerRadius(100)
                     }
                     Button (action: {calculate()
@@ -235,7 +235,7 @@ struct CalculadoraView: View {
                         }.font(.system(size: 45))
                             .foregroundColor(.white)
                             .frame(width: 185, height: 90)
-                            .background(.ultraThinMaterial)
+                            .background(Color("Botão1"))
                             .cornerRadius(100)
                         .frame(minWidth: geometry.size.width/2)
                         
@@ -246,7 +246,7 @@ struct CalculadoraView: View {
                                 .font(.system(size: 35))
                                 .foregroundColor(.white)
                                 .frame(width: 90, height: 90)
-                                .background(.ultraThinMaterial)
+                                .background(Color("Botão1"))
                                 .cornerRadius(100)
                         }
                         Button (action: {calculate()
