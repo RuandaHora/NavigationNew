@@ -120,21 +120,6 @@ struct Bin2DecView: View {
                     }
                 }
                 Spacer()
-                HStack{
-                    Button(action: {}) {
-                        Text("by Ruan da Hora")
-                            .foregroundColor(Color.white)
-                            .padding(1)
-                            .background(Color("Color"))
-                            .cornerRadius(10)
-                            .scaleEffect(crescendo)
-                            .animation(
-                                Animation
-                                    .easeIn(duration: 3)
-                                    .repeatCount(3)
-                                    .delay(2))
-                    }
-                }
             }
             .onAppear{
                 self.crescendo -= 0.1

@@ -15,9 +15,6 @@ struct HomeView: View {
                 .background(Image("Verde"))
                 ScrollView (.vertical){
                     VStack (spacing: 16){
-                        HStack {
-                            CardCalculadora()
-                        }
                         VStack {
                             Text("")
                         }
@@ -29,7 +26,7 @@ struct HomeView: View {
                             Text("Recent Item")
                                 .font(.title2.bold())
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding()
+                            .padding(.all)
                         }
                         ScrollView(.horizontal, showsIndicators: false){
                             HStack {
@@ -40,6 +37,9 @@ struct HomeView: View {
                                 }
                             }
                         }
+                        HStack {
+                            CardCalculadora()
+                        }
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(0 ..< 1) { item in
@@ -49,15 +49,11 @@ struct HomeView: View {
                                 }
                             }
                         }
-                            HStack {
-                                CardCalculadora()
-                            }
                         HStack {
                             Text("Conversores ")
                                 .font(.title2.bold())
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            
-                            
+                            .padding(.all)
                         }
                             HStack{
                                 CardBin2Dec()
