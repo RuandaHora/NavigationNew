@@ -26,7 +26,7 @@ struct CardCalculadora: View {
                     
                 }
             }.frame(width: 370,height: 50)
-                .background(Image("Gradiente2"))
+                .background(Image("Laranja"))
             .cornerRadius(30)
             .padding(5)
         }

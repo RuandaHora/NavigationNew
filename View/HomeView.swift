@@ -15,6 +15,9 @@ struct HomeView: View {
                 .background(Image("Verde"))
                 ScrollView (.vertical){
                     VStack (spacing: 16){
+                        HStack {
+                            CardCalculadora()
+                        }
                         VStack {
                             Text("")
                         }
@@ -47,9 +50,15 @@ struct HomeView: View {
                             }
                         }
                             HStack {
-                                
                                 CardCalculadora()
                             }
+                        HStack {
+                            Text("Conversores ")
+                                .font(.title2.bold())
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            
+                            
+                        }
                             HStack{
                                 CardBin2Dec()
                             }
