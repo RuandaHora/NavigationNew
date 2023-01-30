@@ -11,7 +11,7 @@ struct OpenMensages: View {
     var body: some View {
         HStack {
             Messages()
-        }
+        }.shadow(radius: 10)
     }
 }
 

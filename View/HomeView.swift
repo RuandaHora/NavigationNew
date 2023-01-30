@@ -21,32 +21,40 @@ struct HomeView: View {
                         HStack {
                                 Mensages()
                         }.padding(1)
-                            .shadow(radius: 20)
+                           
                         
                         HStack {
                             Text("Recent Item")
                                 .font(.title2.bold())
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.all)
+                            .shadow(radius: 5)
                         }
                         ScrollView(.horizontal, showsIndicators: false){
                             HStack {
                                 ForEach(0 ..< 1) { item in
                                     CardsViewOpen()
+                                 
                                     Card2ViewOpen()
+                                    
                                     Card3ViewOpen()
+                                     
                                 }
                             }
                         }
                         HStack {
                             CardCalculadora()
+                               
                         }
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(0 ..< 1) { item in
                                     Card3ViewOpen()
+                                     
                                     CardsViewOpen()
+                                       
                                     Card2ViewOpen()
+                                        
                                 }
                             }
                         }
@@ -58,14 +66,17 @@ struct HomeView: View {
                         }
                             HStack{
                                 CardBin2Dec()
+                              
                             }
                             HStack{
                                 CardDolar_Real()
+                                   
                             }
                     }
                 }
                 .navigationTitle("Featured")
                 .foregroundColor(.white)
+                .shadow(radius: 5)
             }
         }
     }
