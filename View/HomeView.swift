@@ -20,7 +20,8 @@ struct HomeView: View {
                         }
                         HStack {
                                 Mensages()
-                        }
+                        }.padding(1)
+                            .shadow(radius: 20)
                         
                         HStack {
                             Text("Recent Item")
