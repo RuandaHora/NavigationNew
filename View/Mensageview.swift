@@ -149,6 +149,7 @@ struct OpenMensagess: View {
                             }.background(Color.blue)
                                 .cornerRadius(20)
                             .font(.footnote.bold())
+                            .shadow(radius: 30)
                         }
                     }
                         .padding(20)
