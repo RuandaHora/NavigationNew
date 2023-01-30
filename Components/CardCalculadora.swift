@@ -28,8 +28,8 @@ struct CardCalculadora: View {
             }.frame(width: 370,height: 50)
                 .background(Image("Laranja"))
             .cornerRadius(30)
-            .shadow(radius: 5)
-            .padding(5)
+            .shadow(radius: 6)
+            .padding(6)
         }
     }
 }

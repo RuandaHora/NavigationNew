@@ -27,8 +27,8 @@ struct CardDolar_Real: View {
             }.frame(width: 370,height: 50)
             .background(Image("Card3"))
             .cornerRadius(30)
-            .shadow(radius: 5)
-            .padding(5)
+            .shadow(radius: 6)
+            .padding(6)
         }
     }
 }
