@@ -26,15 +26,15 @@ struct Mensage: View {
                 if !show {
                     HStack {
                         Mensagess()
-                    }.padding(5)
-                     .shadow(radius: 5)
+                    }.padding(6)
+                     .shadow(radius: 20)
                     
                 }
                
                     HStack {
                         OpenMensagess()
-                    }.padding(5)
-                    .shadow(radius: 5)
+                    }.padding(6)
+                    .shadow(radius: 20)
             }
             .onTapGesture {
                 withAnimation (.spring(response: 0.6, dampingFraction: 0.5)){
