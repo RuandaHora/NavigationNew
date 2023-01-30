@@ -19,6 +19,7 @@ struct CardView_Previews: PreviewProvider {
 struct CardsView: View {
     @State var show = false
     var body: some View {
+
             VStack (alignment: .leading, spacing: 16.0){
                 
                 HStack {
@@ -40,7 +41,9 @@ struct CardsView: View {
             .foregroundColor(.white)
             .background(Image("BackGround"))
         .cornerRadius(30)
+        .shadow(radius: 5)
         .padding(11.5)
+        
     }
 }
 

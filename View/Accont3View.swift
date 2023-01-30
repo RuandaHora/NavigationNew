@@ -23,6 +23,8 @@ struct Accont3View: View {
                     .background(Image("Laranja"))
                     .frame(width: 200, height: 200)
                     .cornerRadius(100)
+                    .padding(5)
+                    .shadow(radius: 5)
                 }
                 Spacer()
                 Spacer()
@@ -43,6 +45,8 @@ struct Accont3View: View {
                 .background(.ultraThinMaterial)
                 .cornerRadius(10)
                 .font(.headline)
+                .padding(5)
+                .shadow(radius: 5)
             }
             }
         .refreshable {

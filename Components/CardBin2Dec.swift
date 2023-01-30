@@ -27,6 +27,7 @@ struct CardBin2Dec: View {
             }.frame(width: 370,height: 50)
             .background(Image("BackGround"))
             .cornerRadius(30)
+            .shadow(radius: 5)
             .padding(5)
         }
     }

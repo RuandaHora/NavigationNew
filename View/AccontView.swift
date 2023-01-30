@@ -17,10 +17,13 @@ struct AccontView: View {
                     VStack{
                         Image("Image 2")
                             .resizable()
+                           
                     }
                     .background(Image("Laranja"))
                     .frame(width: 200, height: 200)
                     .cornerRadius(100)
+                    .padding(5)
+                    .shadow(radius: 5)
            }
                 VStack (alignment: .leading){
                     Text("Ruan da Hora")
@@ -38,23 +41,24 @@ struct AccontView: View {
                 .frame(width: 250, height: 90)
                 .background(.ultraThinMaterial)
                 .cornerRadius(10)
+                .padding(5)
+                .shadow(radius: 3)
                 .font(.headline)
                 Spacer()
                 Spacer()
                 HStack {
                     Objective()
-                }
+                }.padding(5)
+                .shadow(radius: 3)
                 Spacer()
                 Spacer()
                 VStack{
                     HStack {
                         RedesSociaiss()
-                    }
+                    }.padding(5)
+                     .shadow(radius: 3)
                     }
                 }
-            .refreshable {
-                print("[CARREGANDO....]")
-            }
         }
     }
 }

@@ -46,6 +46,7 @@ struct Cards2View: View {
             .foregroundColor(.white)
             .background(Image("Laranja"))
             .cornerRadius(30)
+            .shadow(radius: 5)
             .padding(11.5)
     }
 }

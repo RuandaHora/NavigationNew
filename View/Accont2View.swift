@@ -24,6 +24,8 @@ struct Accont2View: View {
                     .background(Image("Laranja"))
                     .frame(width: 200, height: 200)
                     .cornerRadius(100)
+                    .padding(5)
+                     .shadow(radius: 5)
                 }
                 Spacer()
                 Spacer()
@@ -43,6 +45,8 @@ struct Accont2View: View {
                 .frame(width: 250, height: 90)
                 .background(.ultraThinMaterial)
                 .cornerRadius(10)
+                .padding(5)
+                .shadow(radius: 5)
                 .font(.headline)
                 
             }
