@@ -205,5 +205,6 @@ struct Mensagess: View {
         )
         .frame(height: 250)
         .padding(15)
+        .shadow(radius: 5)
     }
 }
