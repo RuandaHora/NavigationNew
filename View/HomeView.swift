@@ -21,7 +21,7 @@ struct HomeView: View {
                         HStack {
                                 Mensages()
                         }.padding(1)
-                           
+                            .shadow(radius: 5)
                         
                         HStack {
                             Text("Recent Item")
