@@ -22,7 +22,10 @@ struct HomeView: View {
                                 Mensages()
                         }.padding(1)
                             .shadow(radius: 5)
-                        
+                        HStack {
+                            CardCalculadora()
+                               
+                        }
                         HStack {
                             Text("Recent Item")
                                 .font(.title2.bold())
@@ -32,20 +35,17 @@ struct HomeView: View {
                         }
                         ScrollView(.horizontal, showsIndicators: false){
                             HStack {
-                                ForEach(0 ..< 2) { item in
+                                ForEach(0 ..< 1) { item in
                                     CardsViewOpen()
-                                 
+                                    
                                     Card2ViewOpen()
                                     
                                     Card3ViewOpen()
-                                     
+                                    
                                 }
                             }
                         }
-                        HStack {
-                            CardCalculadora()
-                               
-                        }
+                        
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(0 ..< 1) { item in
