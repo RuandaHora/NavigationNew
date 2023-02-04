@@ -27,7 +27,7 @@ struct HomeView: View {
                                
                         }
                         HStack {
-                            Text("Recent Item")
+                            Text("Recent Item ")
                                 .font(.title2.bold())
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.all)
