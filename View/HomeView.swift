@@ -16,7 +16,7 @@ struct HomeView: View {
                 ScrollView (.vertical){
                     VStack (spacing: 16){
                         VStack {
-                            Text(" ")
+                            Text("")
                         }
                         HStack {
                                 Mensages()
