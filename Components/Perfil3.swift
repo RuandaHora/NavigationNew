@@ -11,7 +11,7 @@ struct Perfil3: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 0)
-            .fill(Color("DarkMode"))
+            .fill(Color("DarkMode "))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
             
