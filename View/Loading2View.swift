@@ -19,7 +19,7 @@ struct Loading2View: View {
         }
         else {
             VStack{
-                Image(systemName:"R")
+                Image("Ruan")
                     .resizable()
                     .frame(width: 100,height: 100)
                     .cornerRadius(35)
